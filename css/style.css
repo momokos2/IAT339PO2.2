@@ -28,9 +28,9 @@ div {
 }
 
 
-/*=======================style sheet styling======================*/
+/*==============================================================style sheet styling======================*/
 
-/*----------------------nav-section styling----------------------*/
+/*--------------------------------------------------------------nav-section styling----------------------*/
 
 .nav-section{
 	width: 250px;
@@ -81,7 +81,7 @@ h1.style-sheet{
 }
 
 
-/*--------------------content-section styling--------------------*/
+/*------------------------------------------------------------content-section styling--------------------*/
 
 .content-section{
 	width: calc(100% - 350px);
@@ -166,9 +166,9 @@ pre{
 }
 
 
-/*=====================website sheet styling====================*/
+/*===========================================================website sheet styling====================*/
 
-/*------------------------general styling-----------------------*/
+/*-----------------------------------------------------------general styling-----------------------*/
 
 /*in-text link */
 a.in-text{
@@ -196,7 +196,7 @@ a.in-text:hover {
 	text-align: center;
 }
 
-/*submit & reset button*/
+/*___________________________________________________________submit & reset button_______________*/
 .button {
     border: 2px solid #9d3625;
     position:relative;
@@ -273,7 +273,7 @@ a.in-text:hover {
     height:40px;
 }
 
-/*Text Input*/
+/*______________________________________________________________________Text Input___________*/
 .my-form input, .my-form textarea, .my-form select
 {
   padding: 5px;
@@ -370,7 +370,7 @@ a.in-text:hover {
 }
 
 
-/*headings*/
+/*___________________________________________________________________headings_______________*/
  h1.website{
 	font-family: "Catamaran-ExtraLight", sans-serif;
 	font-size:2rem;
@@ -410,7 +410,7 @@ h1.website span{
 	margin:1px 0;
 }
 
-/*paragraph*/
+/*______________________________________________________________________paragraph_____________*/
 p{
 	font-family: 'Caramaran-Light', sans-serif;
 	font-size:1rem;
@@ -429,7 +429,7 @@ ul li{
 	color:#666;
 }
 
-/*numbered list*/
+/*______________________________________________________________________numbered list___________*/
 .example ol li{
 	color:#c9b9aa;
 }
@@ -440,7 +440,7 @@ ul li{
 	color:#666;
 }
 
-/*product list*/
+/*____________________________________________________________________product list___________*/
 .flexbox { 
 	display: flex; 
 	flex-wrap: wrap;
@@ -492,11 +492,11 @@ ul li{
 	 margin-bottom: 12px;
 }
 
-/*web grid structure*/
-/*see grid.css*/
+/*_______________________________________________________________________web grid structure*/
+/*_______________________________________________________________________see grid.css*/
 
 
-/*=====================citation page styling====================*/
+/*===============================================================citation page styling====================*/
 
 .citation-style{
 	margin-left: 30px;
