@@ -38,6 +38,33 @@ div {
 	text-decoration: none;
 }
 
+
+
+ .sub-component .menu a {
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid #dcdcdc;
+
+  }
+
+.menu a {
+  line-height: 3rem;
+  padding: 0 1.2rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color:#333;
+  font-family:"Exo2-Regular", sans-serif;
+  display:inline-block;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+}
+
+.menu a:hover {
+  color: #a78a7f;
+}
+
 .nav-section a:hover{
 	color: #9d3625;
 }
@@ -136,7 +163,12 @@ pre{
 
 /*in-text link */
 a.in-text{
-	color: #9d3625;
+	color: #a78a7f;
+}
+
+a.in-text:hover {
+	color: #973241; 
+	transition: all ease .5s;
 }
 
 /*nav*/
@@ -144,27 +176,7 @@ a.in-text{
   list-style: none;
 }
 
-.nav li a {
-	font-family: "Montserrat", sans-serif;
-	text-transform: uppercase;
-	display: block; 
-	padding: 12px 18px; 
-	text-decoration: none; 
-	color: #666; 
-	border-bottom: 1px solid #eee;
-	transition: all ease .5s;
-}
 
-.nav:hover li a {
-	opacity: .5;
-	transition: all ease .5s;
-}
-
-.nav li:hover a {
-	opacity: 1;
-	color: #9d3625;
-	border-color: #9d3625;
-}
 
 /*nav button*/
 .nav-button ul.nav{
