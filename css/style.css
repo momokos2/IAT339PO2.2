@@ -1,4 +1,16 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+html{
+	height:100%;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
 html, body {
+	font-family: 'Catamaran-Regular',sans-serif;
     margin: 0;
     padding: 0;
     border: 0;
