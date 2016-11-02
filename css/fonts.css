@@ -1,0 +1,72 @@
+
+@font-face {
+	font-family: 'Lora-Regular';
+	font-weight: normal;
+	font-style: normal;
+	src:url('../fonts/Lora-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Exo2-light';
+	font-weight: normal;
+	font-style: normal;
+	src:url('../fonts/Exo2-light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Exo2-Regular';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/Exo2-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Exo2-Medium';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/Exo2-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Catamaran-Bold';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/Catamaran-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Catamaran-ExtraLight';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/Catamaran-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Catamaran-Light';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/Catamaran-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Catamaran-Medium';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/Catamaran-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Catamaran-Regular';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/Catamaran-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Catamaran-SemiBold';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/Catamaran-SemiBold.ttf') format('truetype');
+}
+
+
