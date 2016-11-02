@@ -7,11 +7,12 @@
 		<meta charset = "UTF-8">
 		<title>P01 - Yihan Li</title>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,600,700">
+  		<script src="highlighter/prettify.js"></script>
+  		<link rel="icon" href="img/tab-logo.png">
+
   		<link rel="stylesheet" href="css/style.css">
   		<link rel="stylesheet" href="css/fonts.css">
   		<link rel="stylesheet" href="highlighter/prettify.css">
-  		<script src="highlighter/prettify.js"></script>
-  		<link rel="icon" href="img/tab-logo.png">
 
 	</head>
 
@@ -19,7 +20,7 @@
 
 		<div class = "nav-section">
 			
-			<h1>Style Guide</h1>
+			<h1 class="style-sheet">Style Guide</h1>
 
 			<a href="#interactive-elements">Interactive Elements</a>
 		    <a href="#text-styling">Text-Styling</a>
@@ -36,15 +37,15 @@
 
 				<div class=sub-component>
 
-					<h3>In-text Link</h3>
+					<h3 class="heading">In-text Link</h3>
 					
-					<h4>Example</h4>
-					<p>This is a paragraph to demonstrate the style of in-text <a href="#" class="in-text">link</a> in the website.</p>
+					<h4 class="heading">Example</h4>
+					<p class="heading">This is a paragraph to demonstrate the style of in-text <a href="#" class="in-text">link</a> in the website.</p>
 
-					<h4>CSS Selector</h4>
-					<p>a.in-text</p>
+					<h4 class="heading">CSS Selector</h4>
+					<p class="heading">a.in-text</p>
 
-					<h4>Sample Code</h4>
+					<h4 class="heading">Sample Code</h4>
 					<div class="sample-code">
 						<pre class="prettyprint html-code">
 &lt;a href="#" class=".in-text"&gt;link&lt;/a&gt;
@@ -55,30 +56,31 @@
 
 				<div class="sub-component">
 					
-					<h3>Nav Button Style</h3>
+					<h3 class="heading">Nav Button Style</h3>
 					
-					<h4>Example</h4>
-						<div class="header row">
-      
+					<h4 class="heading">Example</h4>
+						<div class="header row">      
 					      <nav class="menu">
-					         <a href="#" class="three columns">Eyewear</a>
-					       	 <a href="#" class="three columns">Event</a>
-					         <a href="#" class="three columns">About</a>
-					         <a href="#" class="three columns">Contact</a>
-					      </nav>
-					      
+					         <a href="#">Eyewear</a>
+					       	 <a href="#">Event</a>
+					         <a href="#">About</a>
+					         <a href="#">Contact</a>
+					      </nav>					      
 					    </div>
 
-					<h4>CSS Selector</h4>
-					<p>.nav li a</p>
+					<h4 class="heading">CSS Selector</h4>
+					<p class="heading">.nav li a</p>
 
 					<h4>Sample Code</h4>
 					<div class="sample-code">		
 					
 						<pre class="prettyprint html-code">
-&lt;ul class="nav"&gt;
-	&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;i class="circle"&gt;&lt;/i&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;nav class="menu"&gt;
+	&lt;a href="#"&gt;Eyewear&lt;/a&gt;
+	&lt;a href="#"&gt;Event&lt;/a&gt;
+	&lt;a href="#"&gt;About&lt;/a&gt;
+	&lt;a href="#"&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;
 						</pre>
 					</div>
 
@@ -86,9 +88,9 @@
 
 			<div class="sub-component">
 
-					<h3>Submit/Rest Buttons</h3>
+					<h3 class="heading">Submit/Rest Buttons</h3>
 					
-					<h4>Example</h4>
+					<h4 class="heading">Example</h4>
 					<div class="example">
 						<div class="button in-line">
 							<a class="" href="#">Submit</a>
@@ -100,10 +102,10 @@
 						</div>
 					</div>
 
-					<h4>CSS Selector</h4>
-					<p>.button</p>
+					<h4 class="heading">CSS Selector</h4>
+					<p class="heading">.button</p>
 
-					<h4>Sample Code</h4>
+					<h4 class="heading">Sample Code</h4>
 					<div class="sample-code">
 							<pre class="prettyprint html-code">
 &lt;!-- submit button --&gt;
@@ -124,19 +126,19 @@
 
 				<div class="sub-component">
 
-					<h3>Text Input &amp; Label</h3>
+					<h3 class="heading">Text Input &amp; Label</h3>
 					
-					<h4>Example</h4>
+					<h4 class="heading">Example</h4>
 					<div class="example">
 						<form action="#" class="my-form">
 							<input id="name" type="text" name="name" placeholder="Name" />  
 						</form>
 					</div>
 
-					<h4>CSS Selector</h4>
-					<p>.my-form input</p>
+					<h4 class="heading">CSS Selector</h4>
+					<p class="heading">.my-form input</p>
 
-					<h4>Sample Code</h4>
+					<h4 class="heading">Sample Code</h4>
 					<div class="sample-code">
 							<pre class="prettyprint html-code">
 &lt;form action="#" class="my-form"&gt;
@@ -155,21 +157,21 @@
 
 				<div class="sub-component">
 
-					<h3>Headings</h3>
+					<h3 class="heading">Headings</h3>
 						
-					<h4>Example</h4>
+					<h4 class="heading">Example</h4>
 						
 					<div class="example">
-						<h1>Heading 1</h1>
+						<h1> <span>Heading 1</span></h1>
 						<h2>Heading 2</h2>
 						<h3>Heading 3</h3>
 						<h4>Heading 4</h4>
 					</div>
 
-					<h4>CSS Selector</h4>
-					<p>h1, h2, h3, h4</p>
+					<h4 class="heading">CSS Selector</h4>
+					<p class="heading">h1, h2, h3, h4</p>
 
-					<h4>Sample Code</h4>
+					<h4 class="heading">Sample Code</h4>
 					<div class="sample-code">
 							<pre class="prettyprint html-code">
 &lt;h1&gt;Heading 1&lt;/h1&gt;
@@ -183,18 +185,18 @@
 
 				<div class="sub-component">
 
-					<h3>Paragraph</h3>
+					<h3 class="heading">Paragraph</h3>
 						
-					<h4>Example</h4>
+					<h4 class="heading">Example</h4>
 						
 					<div class="example">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut accumsan nunc id tincidunt luctus. Sed scelerisque id leo vel gravida. Aliquam erat volutpat. Pellentesque vehicula fringilla dolor ac dignissim. Sed ornare lobortis nunc ut gravida. Phasellus non felis nec lorem sagittis dictum varius sit amet risus. Sed semper arcu a aliquam cursus. Donec aliquam arcu augue, a pretium orci pellentesque vitae. Aliquam sollicitudin turpis vitae nulla sagittis, in facilisis massa vestibulum.</p>
 					</div>
 
-					<h4>CSS Selector</h4>
-					<p>p</p>
+					<h4 class="heading">CSS Selector</h4>
+					<p class="heading"> p</p>
 
-					<h4>Sample Code</h4>
+					<h4 class="heading">Sample Code</h4>
 					<div class="sample-code">
 							<pre class="prettyprint html-code">
 &lt;p&gt;Paragraph.&lt;/p&gt;
@@ -205,9 +207,9 @@
 
 				<div class="sub-component">
 
-					<h3>Bulleted List</h3>
+					<h3 class="heading">Bulleted List</h3>
 						
-					<h4>Example</h4>
+					<h4 class="heading">Example</h4>
 						
 					<div class="example">
 						<ul>
@@ -218,8 +220,8 @@
 						</ul>
 					</div>
 
-					<h4>CSS Selector</h4>
-					<p>ul li</p>
+					<h4 class="heading">CSS Selector</h4>
+					<p class="heading">ul li</p>
 
 					<h4>Sample Code</h4>
 					<div class="sample-code">
@@ -237,9 +239,9 @@
 
 				<div class="sub-component">
 
-					<h3>Numbered List</h3>
+					<h3 class="heading">Numbered List</h3>
 						
-					<h4>Example</h4>
+					<h4 class="heading">Example</h4>
 						
 					<div class="example">
 						<ol>
@@ -250,10 +252,10 @@
 						</ol>
 					</div>
 
-					<h4>CSS Selector</h4>
-					<p>ol li</p>
+					<h4 class="heading">CSS Selector</h4>
+					<p class="heading">ol li</p>
 
-					<h4>Sample Code</h4>
+					<h4 class="heading">Sample Code</h4>
 					<div class="sample-code">
 							<pre class="prettyprint html-code">
 &lt;ol&gt;
@@ -275,35 +277,37 @@
 
 				<div class="sub-component">
 
-					<h3>Main Navigation</h3>
+					<h3 class="heading">Main Navigation</h3>
 						
-					<h4>Example</h4>
+					<h4 class="heading">Example</h4>
 						
 					<div class="example">
-						<ul class="nav">
-							<li class="in-line"><a href="">HOME</a></li>
-							<li class="in-line"><a href="">EYECARE</a></li>
-							<li class="in-line"><a href="">EYEWEAR</a></li>
-							<li class="in-line"><a href="">HELP</a></li>
-							<li class="in-line"><a href="">ABOUT</a></li>
-						</ul>
+						<div class="header row">
+      
+					      <nav class="menu">
+					         <a href="#">Eyewear</a>
+					       	 <a href="#">Event</a>
+					         <a href="#">About</a>
+					         <a href="#">Contact</a>
+					      </nav>
+					      
+					    </div>
 					</div>
 
-					<h4>CSS Selector</h4>
-					<p>.nav</p>
+					<h4 class="heading">CSS Selector</h4>
+					<p class="heading">.nav</p>
 
-					<h4>Sample Code</h4>
+					<h4 class="heading">Sample Code</h4>
 					
 					<div class="sample-code">
 	
 							<pre class="prettyprint html-code">
-&lt;ul class="nav"&gt;
-	&lt;li class="in-line"&gt;&lt;a href=""&gt;HOME&lt;/a&gt;&lt;/li&gt;
-	&lt;li class="in-line"&gt;&lt;a href=""&gt;EYECARE&lt;/a&gt;&lt;/li&gt;
-	&lt;li class="in-line"&gt;&lt;a href=""&gt;EYEWEAR&lt;/a&gt;&lt;/li&gt;
-	&lt;li class="in-line"&gt;&lt;a href=""&gt;HELP&lt;/a&gt;&lt;/li&gt;
-	&lt;li class="in-line"&gt;&lt;a href=""&gt;ABOUT&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;nav class="menu"&gt;
+	&lt;a href="#"&gt;Eyewear&lt;/a&gt;
+	&lt;a href="#"&gt;Event&lt;/a&gt;
+	&lt;a href="#"&gt;About&lt;/a&gt;
+	&lt;a href="#"&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;
 							</pre>
 							
 					</div>
@@ -312,15 +316,15 @@
 
 				<div class="sub-component">
 
-					<h3>Product List</h3>
+					<h3 class="heading">Product List</h3>
 						
-					<h4>Example</h4>
+					<h4 class="heading">Example</h4>
 						
 					<div class="example">
 						
-						<div class="flexbox">
+						<div class="row">
 						
-							<div class="product-item">
+							<div class="product-item four columns">
 								<img src="img/image.jpg" alt="a placeholder image">
 									<div class="product-list">
 										<h3>Product Name</h3>
@@ -328,7 +332,7 @@
 									</div>
 							</div>
 
-							<div class="product-item">
+							<div class="product-item four columns">
 								<img src="img/image.jpg" alt="a placeholder image">
 									<div class="product-list">
 										<h3>Product Name</h3>
@@ -336,7 +340,7 @@
 									</div>
 							</div>
 
-							<div class="product-item">
+							<div class="product-item four columns">
 								<img src="img/image.jpg" alt="a placeholder image">
 									<div class="product-list">
 										<h3>Product Name</h3>
@@ -344,22 +348,14 @@
 									</div>
 							</div>
 
-							<div class="product-item">
-								<img src="img/image.jpg" alt="a placeholder image">
-									<div class="product-list">
-										<h3>Product Name</h3>
-										<h4 class="price">CAD 1000</h4>
-									</div>
-							</div>
-        
 						</div>
 
 					</div>
 
-					<h4>CSS Selector</h4>
-					<p>.product-item .product-list</p>
+					<h4 class="heading">CSS Selector</h4>
+					<p class="heading">.product-item .product-list</p>
 
-					<h4>Sample Code</h4>
+					<h4 class="heading">Sample Code</h4>
 					<div class="sample-code">
 						
 							<pre class="prettyprint html-code">
@@ -378,37 +374,37 @@
 				
 				<div class="sub-component">
 
-					<h3>Grid Scture</h3>
+					<h3 class="heading">Grid Scture</h3>
 						
-					<h4>Example</h4>
+					<h4 class="heading">Example</h4>
 					
 				<div class= "grid-structure">
 					<div class="row">
 						<div class="column">
-							<p>Full Width</p>
+							<p class="heading">Full Width</p>
 						</div>
 					</div>
 
 					<div class="row">
 						<div class="column">
-							<p>1/4</p>
+							<p class="heading">1/4</p>
 						</div>
 						<div class="column">
-							<p>1/4</p>
+							<p class="heading">1/4</p>
 						</div>
 						<div class="column">
-							<p>1/4</p>
+							<p class="heading">1/4</p>
 						</div>
 						<div class="column">
-							<p>1/4</p>
+							<p class="heading">1/4</p>
 						</div>
 					</div>
 				</div>
 
-				<h4>CSS Selector</h4>
-				<p>.grid-structure .row .column</p>
+				<h4 class="heading">CSS Selector</h4>
+				<p class="heading">.grid-structure .row .column</p>
 
-				<h4>Sample Code</h4>
+				<h4 class="heading">Sample Code</h4>
 					
 					<div class="sample-code">
 
@@ -451,15 +447,15 @@
 
 				<div class=sub-component>
 
-					<p>Please read the notes section on the left side of wireframe pages for instructions :) </p>
+					<p class="heading">Please read the notes section on the left side of wireframe pages for instructions :) </p>
 
-					<h3>Smartwatch</h3>
+					<h3 class="heading">Smartwatch</h3>
 					<p><a href="http://5ie1lg.axshare.com" target="_blank" class="in-text">http://5ie1lg.axshare.com</a></p>
 					
-					<h3>Smartphone</h3>
+					<h3 class="heading">Smartphone</h3>
 					<p><a href="http://cbo5c9.axshare.com" target="_blank" class="in-text">http://cbo5c9.axshare.com</a></p>
 					
-					<h3>Game Console</h3>
+					<h3 class="heading">Game Console</h3>
 					<p><a href="http://whl24k.axshare.com" target="_blank" class="in-text">http://whl24k.axshare.com</a></p>
 					
 
@@ -473,7 +469,7 @@
 
 				<div class=sub-component>
 
-					<p>Click<a href="citation.html" target="_blank" class="in-text"> here</a> to open citation page.</p>
+					<p class="heading">Click<a href="citation.html" target="_blank" class="in-text"> here</a> to open citation page.</p>
 					
 				</div>
 

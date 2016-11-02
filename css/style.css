@@ -20,7 +20,7 @@ html, body {
 }
 
 body {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 div {
@@ -52,19 +52,11 @@ div {
 
 
 
- .sub-component .menu a {
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    border-bottom: 1px solid #dcdcdc;
-
-  }
-
 .menu a {
   line-height: 3rem;
   padding: 0 1.2rem;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color:#333;
   font-family:"Exo2-Regular", sans-serif;
   display:inline-block;
@@ -81,7 +73,7 @@ div {
 	color: #9d3625;
 }
 
-h1{
+.style-sheet h1{
 	font-family: "Montserrat", sans-serif; 
   	text-transform: uppercase;
   	color:#c9b9aa;
@@ -120,7 +112,7 @@ h2.heading {
 	margin-bottom: 30px;
 }
 
-.sub-component h3{
+h3.heading{
 	font-family: "Raleway", sans-serif; 
 	font-weight: 700;
 	font-size: 1em;
@@ -128,7 +120,7 @@ h2.heading {
 	margin-top: 2em;
 }
 
-.sub-component h4{
+h4.heading{
 	font-family: "Raleway", sans-serif; 
 	font-weight: 600;
 	font-size: 0.8em;
@@ -137,7 +129,7 @@ h2.heading {
 	color:#c9b9aa;
 }
 
-.sub-component p{
+p.heading{
 	font-family: "Raleway", sans-serif; 
 	font-weight:600;
 	margin-top:0;
@@ -166,6 +158,11 @@ pre{
 
 .in-line{
 	display: inline-block;
+}
+
+.example .product-item{
+  margin-right: 5%;
+  text-align: center;
 }
 
 
@@ -336,8 +333,7 @@ a.in-text:hover {
   transition: opacity 0.35s ease-in-out;
 }
 
-.my-form input
-{
+.my-form input {
   font-size: 16px;
   padding: 4px;
   -webkit-border-radius: 4px;
@@ -352,66 +348,74 @@ a.in-text:hover {
   margin-bottom: 5px;
 }
 
-.my-form input:hover
-{
+.my-form input:hover {
   outline: none;
   border-color: #c9b9aa;
 }
+
 .my-form input:focus
 {
   outline: none;
   border-color: #c9b9aa;
 }
 
+
 /*headings*/
-.example h1{
-	font-family: "Montserrat", sans-serif;
-	font-size:40px;
+ h1{
+	font-family: "Catamaran-ExtraLight", sans-serif;
+	font-size:2rem;
 	color:#666;
-	margin:2px 0 1px;
+	text-align: center;
+	width:100%;
+	border-bottom: 1px solid #000; 
+    line-height: 0em;
+    margin: 10px 0 20px; 
 }
 
-.example h2{
-	font-family: "Raleway", sans-serif;
-	font-size:25px;
-	font-weight:400;
+h1 span{
+	background:#fff; 
+    padding:0 20px; 
+}
+
+ h2{
+	font-family: 'Catamaran-Regular', sans-serif;
+	font-size:1.7rem;
 	text-transform: uppercase;
 	color:#9d3625;
 	margin:1px 0;
+	text-align: center;
 }
 
-.example h3{
-	font-family: "Raleway", sans-serif;
-	font-size:20px;
-	font-weight:800;
+ h3{
+	font-family: 'Catamaran-Regular', sans-serif;
+	font-size:1.5rem;
 	color:#666;
 	margin:1px 0;
 }
 
-.example h4{
-	font-family: "Raleway", sans-serif;
-	font-size:18px;
-	font-weight:400;
+ h4{
+	font-family: 'Catamaran-ExtraLight', sans-serif;
+	font-size:1.3rem;
 	color:#c9b9aa;
 	margin:1px 0;
 }
 
 /*paragraph*/
-.example p{
-	font-family: "Raleway", sans-serif;
-	font-size:18px;
-	font-weight:400;
+p{
+	font-family: 'Caramaran-Light', sans-serif;
+	font-size:1rem;
+  font-weight: 400;
 	color:#666;
+  line-height: 130%;
 }
 
-/*bulleted list*/
-.example ul li{
+ul li{
 	color:#c9b9aa;
 }
 
 .example ul li span{
-	font-family: "Raleway", sans-serif;
-	font-size:18px;
+	font-family: 'Caramaran-Light', sans-serif;
+	font-size:1rem;
 	color:#666;
 }
 
@@ -421,8 +425,8 @@ a.in-text:hover {
 }
 
 .example ol li span{
-	font-family: "Raleway", sans-serif;
-	font-size:18px;
+	font-family: 'Caramaran-Light', sans-serif;
+	font-size:1rem;
 	color:#666;
 }
 
@@ -435,6 +439,7 @@ a.in-text:hover {
 
 .product-item {
 	margin-bottom: 10px;
+  margin-right: 
 	text-align: center;
 	border: 1px solid #F1F2F2;
 	border-bottom: 2px solid #F1F2F2;
