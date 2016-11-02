@@ -5,14 +5,15 @@
 	<head>
 
 		<meta charset = "UTF-8">
-		<title>P01 - Yihan Li</title>
+		<title>P02 - Style Guide</title>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,600,700">
   		<script src="highlighter/prettify.js"></script>
   		<link rel="icon" href="img/tab-logo.png">
-
   		<link rel="stylesheet" href="css/style.css">
   		<link rel="stylesheet" href="css/fonts.css">
+ 		<link rel="stylesheet" href="css/grid.css">
   		<link rel="stylesheet" href="highlighter/prettify.css">
+
 
 	</head>
 
@@ -25,7 +26,7 @@
 			<a href="#interactive-elements">Interactive Elements</a>
 		    <a href="#text-styling">Text-Styling</a>
 		    <a href="#combined-elements">Combined Elements</a>
-		    <a href="#wireframes">Wireframes</a>
+		    <a href="#sitemap">Site Map</a>
 		    <a href="#citation">Citation</a>
 		</div>
 
@@ -33,19 +34,19 @@
 
 			<div class="component" id="interactive-elements">
 
-				<h2 class="heading">Interactive Elements</h2>
+				<h2 class="style-sheet"">Interactive Elements</h2>
 
 				<div class=sub-component>
 
-					<h3 class="heading">In-text Link</h3>
+					<h3 class="style-sheet"">In-text Link</h3>
 					
-					<h4 class="heading">Example</h4>
-					<p class="heading">This is a paragraph to demonstrate the style of in-text <a href="#" class="in-text">link</a> in the website.</p>
+					<h4 class="style-sheet"">Example</h4>
+					<p class="style-sheet"">This is a paragraph to demonstrate the style of in-text <a href="#" class="in-text">link</a> in the website.</p>
 
-					<h4 class="heading">CSS Selector</h4>
-					<p class="heading">a.in-text</p>
+					<h4 class="style-sheet"">CSS Selector</h4>
+					<p class="style-sheet"">a.in-text</p>
 
-					<h4 class="heading">Sample Code</h4>
+					<h4 class="style-sheet"">Sample Code</h4>
 					<div class="sample-code">
 						<pre class="prettyprint html-code">
 &lt;a href="#" class=".in-text"&gt;link&lt;/a&gt;
@@ -56,9 +57,9 @@
 
 				<div class="sub-component">
 					
-					<h3 class="heading">Nav Button Style</h3>
+					<h3 class="style-sheet"">Nav Button Style</h3>
 					
-					<h4 class="heading">Example</h4>
+					<h4 class="style-sheet"">Example</h4>
 						<div class="header row">      
 					      <nav class="menu">
 					         <a href="#">Eyewear</a>
@@ -68,10 +69,10 @@
 					      </nav>					      
 					    </div>
 
-					<h4 class="heading">CSS Selector</h4>
-					<p class="heading">.nav li a</p>
+					<h4 class="style-sheet"">CSS Selector</h4>
+					<p class="style-sheet"">.nav li a</p>
 
-					<h4>Sample Code</h4>
+					<h4 class="style-sheet">Sample Code</h4>
 					<div class="sample-code">		
 					
 						<pre class="prettyprint html-code">
@@ -88,37 +89,36 @@
 
 			<div class="sub-component">
 
-					<h3 class="heading">Submit/Rest Buttons</h3>
+					<h3 class="style-sheet"">Submit/Rest Buttons</h3>
 					
-					<h4 class="heading">Example</h4>
+					<h4 class="style-sheet"">Example</h4>
 					<div class="example">
-						<div class="button in-line">
-							<a class="" href="#">Submit</a>
+						<a href="#" class="button in-line">
+							<p>Submit</p>
 							<div class="easing-up"></div>
-						</div>
-						<div class="button in-line">
-							<a class="" href="#">Reset</a>
+						</a>
+						<a href="#" class="button in-line">
+							<p>Reset</p>
 							<div class="easing-down"></div>
-						</div>
+						</a>
+
 					</div>
 
-					<h4 class="heading">CSS Selector</h4>
-					<p class="heading">.button</p>
+					<h4 class="style-sheet"">CSS Selector</h4>
+					<p class="style-sheet"">.button</p>
 
-					<h4 class="heading">Sample Code</h4>
+					<h4 class="style-sheet"">Sample Code</h4>
 					<div class="sample-code">
 							<pre class="prettyprint html-code">
-&lt;!-- submit button --&gt;
-&lt;div class="button"&gt;
-	&lt;a class="" href="#"&gt;Submit&lt;/a&gt;
+&lt;a href="#" class="butto"&gt;
+	&lt;p&gt;Submit&lt;/p&gt;
 	&lt;div class="easing-up"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- reset button --&gt;
-&lt;div class="button"&gt;
-	&lt;a class="" href="#"&gt;Reset&lt;/a&gt;
+&lt;/a&gt;
+&lt;a href="#" class="button"&gt;
+	&lt;p&gt;Reset&lt;/p&gt;
 	&lt;div class="easing-down"&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;/a&gt;
+			
 							</pre>
 					</div>
 
@@ -126,23 +126,59 @@
 
 				<div class="sub-component">
 
-					<h3 class="heading">Text Input &amp; Label</h3>
+					<h3 class="style-sheet"">Text Input &amp; Label</h3>
 					
-					<h4 class="heading">Example</h4>
+					<h4 class="style-sheet">Example</h4>
 					<div class="example">
 						<form action="#" class="my-form">
+							<label for="name">Name</label>
 							<input id="name" type="text" name="name" placeholder="Name" />  
+
+							<label for="select">Select</label>
+							<select>
+							  <option value="volvo">Volvo</option>
+							  <option value="saab">Saab</option>
+							  <option value="opel">Opel</option>
+							  <option value="audi">Audi</option>
+							</select>
+
+							<label for="name">Comment</label>
+							<textarea id="textarea" required="required" placeholder="Enter comment here..."></textarea>
+
+							<div class="checkbox">
+						      <label>
+						      <input type="checkbox"/><i class="check-sign"></i>Save Password
+						      </label>
+						    </div>  
 						</form>
 					</div>
 
-					<h4 class="heading">CSS Selector</h4>
-					<p class="heading">.my-form input</p>
+					<h4 class="style-sheet">CSS Selector</h4>
+					<p class="style-sheet">.my-form input, .my-form select, .my-form textarea, .my-form .checkbox</p>
 
-					<h4 class="heading">Sample Code</h4>
+					<h4 class="style-sheet">Sample Code</h4>
 					<div class="sample-code">
 							<pre class="prettyprint html-code">
 &lt;form action="#" class="my-form"&gt;
+	&lt;label for="name"&gt;Name&lt;/label&gt;
 	&lt;input id="name" type="text" name="name" placeholder="Name" /&gt;  
+
+	&lt;label for="select"&gt;Select&lt;/label&gt;
+	&lt;select&gt;
+	  &lt;option value="volvo"&gt;Volvo&lt;/option&gt;
+	  &lt;option value="saab"&gt;Saab&lt;/option&gt;
+	  &lt;option value="opel"&gt;Opel&lt;/option&gt;
+	  &lt;option value="audi"&gt;Audi&lt;/option&gt;
+	&lt;/select&gt;
+
+	&lt;label for="name"&gt;Comment&lt;/label&gt;
+	&lt;textarea id="textarea" required="required" placeholder="Enter comment here..."&gt;&lt;/textarea&gt;
+
+	&lt;div class="checkbox"&gt;
+      &lt;label&gt;
+      &lt;input type="checkbox"/&gt;&lt;i class="check-sign"&gt;&lt;/i&gt;Save Password
+      &lt;/label&gt;
+    &lt;/div&gt;  
 &lt;/form&gt;
 							</pre>
 					</div>
@@ -153,25 +189,25 @@
 
 			<div class="component" id="text-styling">
 
-				<h2 class="heading">Text Styling</h2>
+				<h2 class="style-sheet"">Text Styling</h2>
 
 				<div class="sub-component">
 
-					<h3 class="heading">Headings</h3>
+					<h3 class="style-sheet"">Headings</h3>
 						
-					<h4 class="heading">Example</h4>
+					<h4 class="style-sheet"">Example</h4>
 						
 					<div class="example">
-						<h1> <span>Heading 1</span></h1>
+						<h1 class="website"> <span>Heading 1</span></h1>
 						<h2>Heading 2</h2>
 						<h3>Heading 3</h3>
 						<h4>Heading 4</h4>
 					</div>
 
-					<h4 class="heading">CSS Selector</h4>
-					<p class="heading">h1, h2, h3, h4</p>
+					<h4 class="style-sheet"">CSS Selector</h4>
+					<p class="style-sheet"">h1, h2, h3, h4</p>
 
-					<h4 class="heading">Sample Code</h4>
+					<h4 class="style-sheet"">Sample Code</h4>
 					<div class="sample-code">
 							<pre class="prettyprint html-code">
 &lt;h1&gt;Heading 1&lt;/h1&gt;
@@ -185,18 +221,18 @@
 
 				<div class="sub-component">
 
-					<h3 class="heading">Paragraph</h3>
+					<h3 class="style-sheet"">Paragraph</h3>
 						
-					<h4 class="heading">Example</h4>
+					<h4 class="style-sheet"">Example</h4>
 						
 					<div class="example">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut accumsan nunc id tincidunt luctus. Sed scelerisque id leo vel gravida. Aliquam erat volutpat. Pellentesque vehicula fringilla dolor ac dignissim. Sed ornare lobortis nunc ut gravida. Phasellus non felis nec lorem sagittis dictum varius sit amet risus. Sed semper arcu a aliquam cursus. Donec aliquam arcu augue, a pretium orci pellentesque vitae. Aliquam sollicitudin turpis vitae nulla sagittis, in facilisis massa vestibulum.</p>
 					</div>
 
-					<h4 class="heading">CSS Selector</h4>
-					<p class="heading"> p</p>
+					<h4 class="style-sheet"">CSS Selector</h4>
+					<p class="style-sheet""> p</p>
 
-					<h4 class="heading">Sample Code</h4>
+					<h4 class="style-sheet"">Sample Code</h4>
 					<div class="sample-code">
 							<pre class="prettyprint html-code">
 &lt;p&gt;Paragraph.&lt;/p&gt;
@@ -207,9 +243,9 @@
 
 				<div class="sub-component">
 
-					<h3 class="heading">Bulleted List</h3>
+					<h3 class="style-sheet"">Bulleted List</h3>
 						
-					<h4 class="heading">Example</h4>
+					<h4 class="style-sheet"">Example</h4>
 						
 					<div class="example">
 						<ul>
@@ -220,10 +256,10 @@
 						</ul>
 					</div>
 
-					<h4 class="heading">CSS Selector</h4>
-					<p class="heading">ul li</p>
+					<h4 class="style-sheet"">CSS Selector</h4>
+					<p class="style-sheet"">ul li</p>
 
-					<h4>Sample Code</h4>
+					<h4 class="style-sheet">Sample Code</h4>
 					<div class="sample-code">
 							<pre class="prettyprint html-code">
 &lt;ul&gt;
@@ -239,9 +275,9 @@
 
 				<div class="sub-component">
 
-					<h3 class="heading">Numbered List</h3>
+					<h3 class="style-sheet"">Numbered List</h3>
 						
-					<h4 class="heading">Example</h4>
+					<h4 class="style-sheet"">Example</h4>
 						
 					<div class="example">
 						<ol>
@@ -252,10 +288,10 @@
 						</ol>
 					</div>
 
-					<h4 class="heading">CSS Selector</h4>
-					<p class="heading">ol li</p>
+					<h4 class="style-sheet"">CSS Selector</h4>
+					<p class="style-sheet"">ol li</p>
 
-					<h4 class="heading">Sample Code</h4>
+					<h4 class="style-sheet"">Sample Code</h4>
 					<div class="sample-code">
 							<pre class="prettyprint html-code">
 &lt;ol&gt;
@@ -273,13 +309,13 @@
 
 			<div class="component" id="combined-elements">
 
-				<h2 class="heading">Combined Elements</h2>
+				<h2 class="style-sheet"">Combined Elements</h2>
 
 				<div class="sub-component">
 
-					<h3 class="heading">Main Navigation</h3>
+					<h3 class="style-sheet"">Main Navigation</h3>
 						
-					<h4 class="heading">Example</h4>
+					<h4 class="style-sheet"">Example</h4>
 						
 					<div class="example">
 						<div class="header row">
@@ -294,10 +330,10 @@
 					    </div>
 					</div>
 
-					<h4 class="heading">CSS Selector</h4>
-					<p class="heading">.nav</p>
+					<h4 class="style-sheet"">CSS Selector</h4>
+					<p class="style-sheet"">.nav</p>
 
-					<h4 class="heading">Sample Code</h4>
+					<h4 class="style-sheet"">Sample Code</h4>
 					
 					<div class="sample-code">
 	
@@ -316,9 +352,9 @@
 
 				<div class="sub-component">
 
-					<h3 class="heading">Product List</h3>
+					<h3 class="style-sheet"">Product List</h3>
 						
-					<h4 class="heading">Example</h4>
+					<h4 class="style-sheet"">Example</h4>
 						
 					<div class="example">
 						
@@ -352,10 +388,10 @@
 
 					</div>
 
-					<h4 class="heading">CSS Selector</h4>
-					<p class="heading">.product-item .product-list</p>
+					<h4 class="style-sheet"">CSS Selector</h4>
+					<p class="style-sheet"">.product-item .product-list</p>
 
-					<h4 class="heading">Sample Code</h4>
+					<h4 class="style-sheet"">Sample Code</h4>
 					<div class="sample-code">
 						
 							<pre class="prettyprint html-code">
@@ -374,64 +410,80 @@
 				
 				<div class="sub-component">
 
-					<h3 class="heading">Grid Scture</h3>
+					<h3 class="style-sheet"">Grid Structure</h3>
 						
-					<h4 class="heading">Example</h4>
+					<h4 class="style-sheet"">Example</h4>
 					
-				<div class= "grid-structure">
-					<div class="row">
-						<div class="column">
-							<p class="heading">Full Width</p>
+					<div class="example">
+					
+						<div class="row">
+
+							<div class="three columns demo"><p>3</p></div>				    
+							<div class="three columns demo"><p>3</p></div>					    
+							<div class="three columns demo"><p>3</p></div>					  
+							<div class="three columns last demo"><p>3</p></div>
+
 						</div>
+
+						<div class="row">
+
+							<div class="four columns demo"><p>4</p></div>				    
+							<div class="four columns demo"><p>4</p></div>				    
+							<div class="four columns last demo"><p>4</p></div>
+
+						</div>
+
+						<div class="row">
+
+							<div class="four columns demo"><p>4</p></div>
+							<div class="eight columns demo last"><p>8</p></div>					    
+
+						</div>
+
+						<div class="row">
+
+							<div class="twelve columns demo"><p>12</p></div>
+
+						</div>
+
 					</div>
 
-					<div class="row">
-						<div class="column">
-							<p class="heading">1/4</p>
-						</div>
-						<div class="column">
-							<p class="heading">1/4</p>
-						</div>
-						<div class="column">
-							<p class="heading">1/4</p>
-						</div>
-						<div class="column">
-							<p class="heading">1/4</p>
-						</div>
-					</div>
-				</div>
+				<h4 class="style-sheet">CSS Selector</h4> 
+				<p class="style-sheet">.row .three.columns, .row .four.columns, .row .twelve.columns</p>
 
-				<h4 class="heading">CSS Selector</h4>
-				<p class="heading">.grid-structure .row .column</p>
-
-				<h4 class="heading">Sample Code</h4>
+				<h4 class="style-sheet">Sample Code</h4>
 					
 					<div class="sample-code">
 
 							<pre class="prettyprint html-code">
-&lt;!--column of 1--&gt;
-&lt;div class= "grid-structure"&gt;
-	&lt;div class="row"&gt;
-		&lt;div class="column"&gt;
-			&lt;p&gt;Full Width&lt;/p&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
+&lt;div class="row"&gt;
 
-&lt;!--column of 4--&gt;
-	&lt;div class="row"&gt;
-		&lt;div class="column"&gt;
-			&lt;p&gt;1/4&lt;/p&gt;
-		&lt;/div&gt;
-		&lt;div class="column"&gt;
-			&lt;p&gt;1/4&lt;/p&gt;
-		&lt;/div&gt;
-		&lt;div class="column"&gt;
-			&lt;p&gt;1/4&lt;/p&gt;
-		&lt;/div&gt;
-		&lt;div class="column"&gt;
-			&lt;p&gt;1/4&lt;/p&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
+	&lt;div class="three columns demo"&gt;&lt;p&gt;3&lt;/p&gt;&lt;/div&gt;				    
+	&lt;div class="three columns demo"&gt;&lt;p&gt;3&lt;/p&gt;&lt;/div&gt;					    
+	&lt;div class="three columns demo"&gt;&lt;p&gt;3&lt;/p&gt;&lt;/div&gt;					  
+	&lt;div class="three columns last demo"&gt;&lt;p&gt;3&lt;/p&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class="row"&gt;
+
+	&lt;div class="four columns demo"&gt;&lt;p&gt;4&lt;/p&gt;&lt;/div&gt;				    
+	&lt;div class="four columns demo"&gt;&lt;p&gt;4&lt;/p&gt;&lt;/div&gt;				    
+	&lt;div class="four columns last demo"&gt;&lt;p&gt;4&lt;/p&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class="row"&gt;
+
+	&lt;div class="four columns demo"&gt;&lt;p&gt;4&lt;/p&gt;&lt;/div&gt;
+	&lt;div class="eight columns demo last"&gt;&lt;p&gt;8&lt;/p&gt;&lt;/div&gt;					    
+
+&lt;/div&gt;
+
+&lt;div class="row"&gt;
+
+	&lt;div class="twelve columns demo"&gt;&lt;p&gt;12&lt;/p&gt;&lt;/div&gt;
+
 &lt;/div&gt;
 							</pre>
 							
@@ -441,39 +493,29 @@
 
 			</div>
 
-			<div class="component" id="wireframes">
+			<div class="component" id="sitemap">
 
-				<h2 class="heading">Interactive Wireframes</h2>
+				<h2 class="style-sheet"">Site Map</h2>
 
 				<div class=sub-component>
 
-					<p class="heading">Please read the notes section on the left side of wireframe pages for instructions :) </p>
-
-					<h3 class="heading">Smartwatch</h3>
-					<p><a href="http://5ie1lg.axshare.com" target="_blank" class="in-text">http://5ie1lg.axshare.com</a></p>
+					<p class="style-sheet">Site Map goes here.</p>
 					
-					<h3 class="heading">Smartphone</h3>
-					<p><a href="http://cbo5c9.axshare.com" target="_blank" class="in-text">http://cbo5c9.axshare.com</a></p>
-					
-					<h3 class="heading">Game Console</h3>
-					<p><a href="http://whl24k.axshare.com" target="_blank" class="in-text">http://whl24k.axshare.com</a></p>
-					
-
 				</div>
 
-			</div>											
+			</div>										
 
 			<div class="component" id="citation">
 
-				<h2 class="heading">Citation</h2>
+				<h2 class="style-sheet"">Citation</h2>
 
 				<div class=sub-component>
 
-					<p class="heading">Click<a href="citation.html" target="_blank" class="in-text"> here</a> to open citation page.</p>
+					<p class="style-sheet">Click<a href="citation.html" target="_blank" class="in-text"> here</a> to open citation page.</p>
 					
 				</div>
 
-			</div>		
+			</div>			
 
 
 		</div> <!-- end of content section -->

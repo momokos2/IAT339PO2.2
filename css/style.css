@@ -73,11 +73,11 @@ div {
 	color: #9d3625;
 }
 
-.style-sheet h1{
-	font-family: "Montserrat", sans-serif; 
-  	text-transform: uppercase;
-  	color:#c9b9aa;
-  	font-size: 30px;
+h1.style-sheet{
+  font-family: "Montserrat", sans-serif; 
+  text-transform: uppercase;
+  color:#c9b9aa;
+  font-size: 30px;
 }
 
 
@@ -100,7 +100,7 @@ div {
 	margin-bottom: 1.2em;
 }
 
-h2.heading {
+h2.style-sheet {
 	font-family: "Raleway", sans-serif; 
 	font-size: 24px;
 	font-weight:400;
@@ -112,7 +112,7 @@ h2.heading {
 	margin-bottom: 30px;
 }
 
-h3.heading{
+h3.style-sheet{
 	font-family: "Raleway", sans-serif; 
 	font-weight: 700;
 	font-size: 1em;
@@ -120,7 +120,7 @@ h3.heading{
 	margin-top: 2em;
 }
 
-h4.heading{
+h4.style-sheet{
 	font-family: "Raleway", sans-serif; 
 	font-weight: 600;
 	font-size: 0.8em;
@@ -129,11 +129,11 @@ h4.heading{
 	color:#c9b9aa;
 }
 
-p.heading{
+p.style-sheet{
 	font-family: "Raleway", sans-serif; 
 	font-weight:600;
 	margin-top:0;
-	margin-bottom: 1.2em;
+	margin-bottom: 1.5em;
 	font-size:0.8em;
 }
 
@@ -185,8 +185,6 @@ a.in-text:hover {
   list-style: none;
 }
 
-
-
 /*nav button*/
 .nav-button ul.nav{
 	padding-left: 0;
@@ -210,12 +208,14 @@ a.in-text:hover {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+    text-decoration: none;
 }
 
-.button a {
+.button p {
     position:relative;
     padding:0px;
     text-align:center;
+    vertical-align: center;
     text-transform:uppercase;
     text-decoration: none;
     color:#888888;
@@ -225,13 +225,15 @@ a.in-text:hover {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+    font-size: 0.8rem;
+    font-family:"PT_Sans-Web-Regular",sans-serif;
 }
 
-.button:hover a {
-
+.button:hover p {
     color:#ffffff;
-    z-index: 1000;
+    z-index: 2;
 }
+
 
 .easing-up {
     position: absolute;
@@ -272,109 +274,117 @@ a.in-text:hover {
 }
 
 /*Text Input*/
-:-webkit-input-placeholder {
-  color: #000;
-  opacity: 0.5;
-  -webkit-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-:-moz-placeholder {
-  color: #000;
-  opacity: 0.5;
-  -moz-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-:-ms-input-placeholder {  
-  color: #000;
-  opacity: 0.5;
-  -ms-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-
-:hover::-webkit-input-placeholder {
-  opacity: 0.75;
-  -webkit-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-:hover:-moz-placeholder {
-  opacity: 0.75;
-  -moz-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-:hover::-moz-placeholder {
-  opacity: 0.75;
-  -moz-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-:hover:-ms-input-placeholder {  
-  opacity: 0.75;
-  -ms-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-
-:focus::-webkit-input-placeholder {
-  opacity: 0;
-  -webkit-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-:focus:-moz-placeholder {
-  opacity: 0;
-  -moz-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-:focus::-moz-placeholder {
-  opacity: 0;
-  -moz-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-:focus:-ms-input-placeholder {  
-  opacity: 0;
-  -ms-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-
-.my-form input {
-  font-size: 16px;
-  padding: 4px;
+.my-form input, .my-form textarea, .my-form select
+{
+  padding: 5px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 0px;
   border: 1px solid #d4d4d4;
   line-height: 20px;
   text-indent: 5px;
-  width: 400px;
+  width: 400px;   
   display: block;
   clear: both;
-  margin-bottom: 5px;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  font-family: "PT_Sans-Web-Regular",sans-serif;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
-.my-form input:hover {
+.my-form label{
+  color:#a78a7f;
+}
+
+.my-form select option{
+  font-size: 1rem;
+  font-family: "PT_Sans-Web-Regular",sans-serif;
+}
+
+
+.my-form select:focus, .my-form select:hover {
+    outline: none;
+}
+
+.my-form input:hover, .my-form textarea:hover, .my-form label, .checkbox .check-sign:hover, .my-form select:hover
+{
   outline: none;
   border-color: #c9b9aa;
 }
-
-.my-form input:focus
+.my-form input:focus, .my-form textarea:hover, .my-form label, .checkbox .check-sign:hover, .my-form select:select
 {
   outline: none;
   border-color: #c9b9aa;
 }
 
+.checkbox{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.checkbox label{
+  position: relative;
+  cursor: pointer;
+  padding-left: 25px;
+  font-size:0.8rem;
+}
+.checkbox .check-sign{
+  display: block;
+  position: absolute;
+  z-index: 1;
+  height: 18px;
+  width: 18px;
+  border: 1px solid #d4d4d4;
+  top: 2px;
+  left: 0;
+  transition: all 0.2s ease;
+  transform: translate(0,-2px);
+  color: #a9a9a9;
+  font-family: "PT_Sans-Web-Regular",sans-serif;
+}
+.checkbox .check-sign:before{
+  content: '';
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 12px;
+  width: 12px;
+  top: 50%;
+  left: 50%;
+  background: transparent;
+  transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.checkbox input{
+  opacity: 0;
+  position: absolute;
+}
+.checkbox input:checked ~ .check-sign, .checkbox input.checked ~ .check-sign{
+  border-color: gray;
+}
+.checkbox input:checked ~ .check-sign:before, .checkbox input.checked ~ .check-sign:before{
+  background: #a78a7f;
+}
+.checkbox + .checkbox {
+  margin-top: -10px;
+}
+
 
 /*headings*/
- h1{
+ h1.website{
 	font-family: "Catamaran-ExtraLight", sans-serif;
 	font-size:2rem;
 	color:#666;
 	text-align: center;
 	width:100%;
 	border-bottom: 1px solid #000; 
-    line-height: 0em;
-    margin: 10px 0 20px; 
+  line-height: 0em;
+  margin: 10px 0 20px; 
 }
 
-h1 span{
+h1.website span{
 	background:#fff; 
-    padding:0 20px; 
+  padding:0 20px; 
 }
 
  h2{
@@ -484,41 +494,6 @@ ul li{
 
 /*web grid structure*/
 /*see grid.css*/
-.grid-structure {
-  max-width: auto;
-  margin:12px 0;
-  font-size: 20px;
-  line-height: 1.5;
-}
-
-.grid-structure p {
-  text-align: center;
-  background-color: #e0e2e3;
-  color: #666;
-  padding: .5em 0;
-  border-radius: 3px;
-  margin: 0 0 1em 0;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 .5em;
-}
-
-.column {
-  flex: 1;
-}
-
-[class^="column"] {
-  padding: 0 .5em;
-}
-
-@media (max-width: 500px) {
-  [class^="column"] {
-    flex: 0 0 100%;
-  }
-}
 
 
 /*=====================citation page styling====================*/
