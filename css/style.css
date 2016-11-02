@@ -1,0 +1,494 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    width: 100%;
+    vertical-align: baseline;    
+}
+
+body {
+    font-size: 18px;
+}
+
+div {
+    display: block;
+}
+
+/*----------------------nav-section styling----------------------*/
+
+.nav-section{
+	width: 250px;
+	position: fixed;
+	top: 80px;
+	left: 0;
+	padding: 15px;
+}
+
+.nav-section a{
+	display:block;
+	line-height: 3em;
+	padding-left: 25px;
+	font-size: 1em;
+	color: #bdbec0;
+	font-family: "Montserrat", sans-serif;
+	text-decoration: none;
+}
+
+.nav-section a:hover{
+	color: #9d3625;
+}
+
+h1{
+	font-family: "Montserrat", sans-serif; 
+  	text-transform: uppercase;
+  	color:#c9b9aa;
+  	font-size: 30px;
+}
+
+
+/*--------------------content-section styling--------------------*/
+
+.content-section{
+	width: calc(100% - 350px);
+	position: absolute;
+	right: 0;
+	padding: 40px;
+	box-shadow: 1px 0 10px #cccccc;
+}
+
+.component{
+	padding-top: 55px;
+	margin-bottom: 3.5em;
+}
+
+.example{
+	margin-bottom: 1.2em;
+}
+
+h2.heading {
+	font-family: "Raleway", sans-serif; 
+	font-size: 24px;
+	font-weight:400;
+	text-transform: uppercase;
+	text-align: left;
+	color: #9d3625;
+	border-bottom: 1px solid #666666;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+}
+
+.sub-component h3{
+	font-family: "Raleway", sans-serif; 
+	font-weight: 700;
+	font-size: 1em;
+	text-transform: none;
+	margin-top: 2em;
+}
+
+.sub-component h4{
+	font-family: "Raleway", sans-serif; 
+	font-weight: 600;
+	font-size: 0.8em;
+	text-transform: none;
+	margin-bottom: 0.5em;
+	color:#c9b9aa;
+}
+
+.sub-component p{
+	font-family: "Raleway", sans-serif; 
+	font-weight:600;
+	margin-top:0;
+	margin-bottom: 1.2em;
+	font-size:0.8em;
+}
+
+
+.sample-code{
+	display: block;
+	overflow-x: auto;
+	padding: 0.5em;
+	color: #333333;
+	background: #f8f8f8;
+	-webkit-text-size-adjust: none;
+}
+
+.html-code{
+	font-size: 0.9em;
+}
+
+pre{
+	padding:0;
+	margin:0;
+}
+
+.in-line{
+	display: inline-block;
+}
+
+/*------------------------sample styling------------------------*/
+
+/*in-text link */
+a.in-text{
+	color: #9d3625;
+}
+
+/*nav*/
+.nav {
+  list-style: none;
+}
+
+.nav li a {
+	font-family: "Montserrat", sans-serif;
+	text-transform: uppercase;
+	display: block; 
+	padding: 12px 18px; 
+	text-decoration: none; 
+	color: #666; 
+	border-bottom: 1px solid #eee;
+	transition: all ease .5s;
+}
+
+.nav:hover li a {
+	opacity: .5;
+	transition: all ease .5s;
+}
+
+.nav li:hover a {
+	opacity: 1;
+	color: #9d3625;
+	border-color: #9d3625;
+}
+
+/*nav button*/
+.nav-button ul.nav{
+	padding-left: 0;
+}
+
+.nav-button ul.nav a{
+	display:block;
+	width: 50px;
+	text-align: center;
+}
+
+/*submit & reset button*/
+.button {
+    border: 2px solid #9d3625;
+    position:relative;
+    font-family:sans-serif;
+    width:150px;
+    height:40px;
+    margin:0;
+    text-align:center;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.button a {
+    position:relative;
+    padding:0px;
+    text-align:center;
+    text-transform:uppercase;
+    text-decoration: none;
+    color:#888888;
+    font-size:0.8rem;
+    font-weight:600;
+    line-height:40px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.button:hover a {
+
+    color:#ffffff;
+    z-index: 1000;
+}
+
+.easing-up {
+    position: absolute;
+    width:100%;
+    top:0; 
+    height:0px;
+    margin:0 auto;
+    padding:0px;
+    background-color:#9d3625;
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -o-transition: .2s ease;
+    -ms-transition: .2s ease;
+    transition: .2s ease;
+}
+
+.easing-down {
+    position: absolute;
+    width:100%;
+    bottom:0; 
+    height:0px;
+    margin:0 auto;
+    padding:0px;
+    background-color:#9d3625;
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -o-transition: .2s ease;
+    -ms-transition: .2s ease;
+    transition: .2s ease;
+}
+
+.button:hover {
+	color:#ffffff;
+}
+
+.button:hover .easing-up, .button:hover .easing-down  {
+    height:40px;
+}
+
+/*Text Input*/
+:-webkit-input-placeholder {
+  color: #000;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:-moz-placeholder {
+  color: #000;
+  opacity: 0.5;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:-ms-input-placeholder {  
+  color: #000;
+  opacity: 0.5;
+  -ms-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+:hover::-webkit-input-placeholder {
+  opacity: 0.75;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:hover:-moz-placeholder {
+  opacity: 0.75;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:hover::-moz-placeholder {
+  opacity: 0.75;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:hover:-ms-input-placeholder {  
+  opacity: 0.75;
+  -ms-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:focus:-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:focus:-ms-input-placeholder {  
+  opacity: 0;
+  -ms-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+.my-form input
+{
+  font-size: 16px;
+  padding: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 0px;
+  border: 1px solid #d4d4d4;
+  line-height: 20px;
+  text-indent: 5px;
+  width: 400px;
+  display: block;
+  clear: both;
+  margin-bottom: 5px;
+}
+
+.my-form input:hover
+{
+  outline: none;
+  border-color: #c9b9aa;
+}
+.my-form input:focus
+{
+  outline: none;
+  border-color: #c9b9aa;
+}
+
+/*headings*/
+.example h1{
+	font-family: "Montserrat", sans-serif;
+	font-size:40px;
+	color:#666;
+	margin:2px 0 1px;
+}
+
+.example h2{
+	font-family: "Raleway", sans-serif;
+	font-size:25px;
+	font-weight:400;
+	text-transform: uppercase;
+	color:#9d3625;
+	margin:1px 0;
+}
+
+.example h3{
+	font-family: "Raleway", sans-serif;
+	font-size:20px;
+	font-weight:800;
+	color:#666;
+	margin:1px 0;
+}
+
+.example h4{
+	font-family: "Raleway", sans-serif;
+	font-size:18px;
+	font-weight:400;
+	color:#c9b9aa;
+	margin:1px 0;
+}
+
+/*paragraph*/
+.example p{
+	font-family: "Raleway", sans-serif;
+	font-size:18px;
+	font-weight:400;
+	color:#666;
+}
+
+/*bulleted list*/
+.example ul li{
+	color:#c9b9aa;
+}
+
+.example ul li span{
+	font-family: "Raleway", sans-serif;
+	font-size:18px;
+	color:#666;
+}
+
+/*numbered list*/
+.example ol li{
+	color:#c9b9aa;
+}
+
+.example ol li span{
+	font-family: "Raleway", sans-serif;
+	font-size:18px;
+	color:#666;
+}
+
+/*product list*/
+.flexbox { 
+	display: flex; 
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.product-item {
+	margin-bottom: 10px;
+	text-align: center;
+	border: 1px solid #F1F2F2;
+	border-bottom: 2px solid #F1F2F2;
+	background: white;
+	transition: .4s;
+}
+
+.product-item:hover {
+	border-bottom: 2px solid #9d3625;
+}
+
+.product-item img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.product-list {
+	padding: 15px 0;
+}
+
+.product-list h3 {
+	font-family: "Raleway", sans-serif;
+	font-size:20px;
+	font-weight:800;
+	color:#666;
+	margin: 0 0 10px 0;
+}
+
+
+.price {
+	font-family: "Raleway", sans-serif;
+	font-size:18px;
+	font-weight:400;
+	color:#c9b9aa;
+	margin:1px 0;
+	display: block;
+	 margin-bottom: 12px;
+}
+
+/*web grid structure*/
+.grid-structure {
+  max-width: auto;
+  margin:12px 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.grid-structure p {
+  text-align: center;
+  background-color: #e0e2e3;
+  color: #666;
+  padding: .5em 0;
+  border-radius: 3px;
+  margin: 0 0 1em 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 .5em;
+}
+
+.column {
+  flex: 1;
+}
+
+[class^="column"] {
+  padding: 0 .5em;
+}
+
+@media (max-width: 500px) {
+  [class^="column"] {
+    flex: 0 0 100%;
+  }
+}
+
+.citation-style{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+
+
+
