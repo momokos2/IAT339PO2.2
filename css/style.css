@@ -15,6 +15,9 @@ div {
     display: block;
 }
 
+
+/*=======================style sheet styling======================*/
+
 /*----------------------nav-section styling----------------------*/
 
 .nav-section{
@@ -126,7 +129,10 @@ pre{
 	display: inline-block;
 }
 
-/*------------------------sample styling------------------------*/
+
+/*=====================website sheet styling====================*/
+
+/*------------------------general styling-----------------------*/
 
 /*in-text link */
 a.in-text{
@@ -448,6 +454,7 @@ a.in-text{
 }
 
 /*web grid structure*/
+/*see grid.css*/
 .grid-structure {
   max-width: auto;
   margin:12px 0;
@@ -483,6 +490,9 @@ a.in-text{
     flex: 0 0 100%;
   }
 }
+
+
+/*=====================citation page styling====================*/
 
 .citation-style{
 	margin-left: 30px;

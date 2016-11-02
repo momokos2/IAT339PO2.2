@@ -1,0 +1,103 @@
+.row{
+  width: 100%;
+/*  margin: 2% auto 0 auto;*/
+  display:block;
+}
+
+
+/* CLEARFIX */
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*DEMO STYLING */
+
+.demo{
+   background: #e5e5e5;
+   min-height: 40px;
+   text-align: center;
+}
+
+ /* COLUMNS */
+
+.column, .columns{
+  display: block;
+  float: left;
+  margin-right: 2%;
+}
+
+.one { width: 6.5% }
+.two { width: 15% }
+.three { width: 23.5% }
+.four { width: 32% }
+.five { width: 40.5%}
+.six { width: 49%}
+.seven {width: 57.5% }
+.eight {width: 66% }
+.nine { width: 74.5%}
+.ten { width: 83%}
+.eleven { width: 91.5%}
+.twelve { width: 100%; margin: 0;}
+
+.last, .omega, .end{
+ margin: 0; 
+}
+
+
+/* */
+ @media (max-width: 768px) {
+
+.page{
+    margin-top:0;
+  }
+  
+.column, .columns{
+    margin: 1% 1% 1% 1%;
+    overflow: hidden;
+ }
+ 
+ .one { width: 48% }
+.two { width: 48% }
+.three { width: 48% }
+.four { width: 48% }
+.five { width: 48% }
+.six { width: 48% }
+.seven { width: 48% }
+.eight { width: 48% }
+.nine { width: 48% }
+.ten { width: 48% }
+.eleven { width: 48% }
+.twelve { width: 100% }
+    
+ }
+
+
+@media only screen and (max-width: 480px) {
+
+.page{
+    margin-top:0;
+  }
+  
+.column, .columns{
+    margin: 1% 1% 1% 1%;
+    overflow: hidden;
+ }
+ 
+.one { width: 100% }
+.two { width: 100% }
+.three { width: 100% }
+.four { width: 100% }
+.five { width: 100% }
+.six { width: 100% }
+.seven { width: 100% }
+.eight { width: 100% }
+.nine { width: 100% }
+.ten { width: 100% }
+.eleven { width: 100% }
+.twelve { width: 100% }
+    
+ }
+
