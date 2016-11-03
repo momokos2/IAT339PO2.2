@@ -142,9 +142,22 @@ pre{
 }
 
 .example .product-item{
-  margin-right: 5%;
+  margin-right: 2%;
   text-align: center;
+  width:30%;
 }
+
+.header {
+  z-index: 5;
+  height:3rem;
+  width:80%;
+  padding:0 2%;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
+  box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
+  background-color: white;
+}
+
 
 
 /*===========================================================website sheet styling====================*/
@@ -154,7 +167,7 @@ pre{
 
 .content-wrapper{
   margin:0 15% 0 15%;
-  padding-top: 80px;
+  padding-top: 75px;
 }
 
 .push{
@@ -162,7 +175,9 @@ pre{
 }
 /*_________________________________________________________header brandname/logo_______________*/
 
-.header {
+
+
+.website.header{
   top: 0;
   position: fixed;
   z-index: 5;
@@ -184,6 +199,8 @@ pre{
   text-decoration: none;
   color:black;
 }
+
+
 
 
 /*_________________________________________________________main navigation___________________________*/
@@ -428,7 +445,7 @@ footer .social-icon {
 }
 
 .button:hover .easing-up, .button:hover .easing-down  {
-    height:40px;
+    height:38px;
 }
 
 /*_____________________________________________________________________in-text link__________ */
@@ -541,8 +558,8 @@ a.in-text:hover {
 /*___________________________________________________________________headings_______________*/
  h1.website{
 	font-family: "Catamaran-ExtraLight", sans-serif;
-	font-size:2rem;
-	color:#666;
+	font-size:1.8rem;
+	color:#000;
 	text-align: center;
 	width:100%;
 	border-bottom: 1px solid #000; 
@@ -557,7 +574,7 @@ h1.website span{
 
  h2{
 	font-family: 'Catamaran-Regular', sans-serif;
-	font-size:1.7rem;
+	font-size:1.6rem;
 	text-transform: uppercase;
 	color:#9d3625;
 	margin:1px 0;
@@ -566,14 +583,14 @@ h1.website span{
 
  h3{
 	font-family: 'Catamaran-Regular', sans-serif;
-	font-size:1.5rem;
+	font-size:1.4rem;
 	color:#666;
 	margin:1px 0;
 }
 
  h4{
 	font-family: 'Catamaran-ExtraLight', sans-serif;
-	font-size:1.3rem;
+	font-size:1.2rem;
 	color:#c9b9aa;
 	margin:1px 0;
 }
@@ -668,12 +685,59 @@ img{
 /*_______________________________________________________________________web grid structure______*/
 /*_______________________________________________________________________see grid.css___________*/
 
-/*===============================================================about.html styling==============*/
+/*------------------------------------------------------------about.html styling----------------*/
 p.twelve {
   padding:20px 0 30px 0 ;
 }
 
 
+/*------------------------------------------------------------event.html styling----------------*/
+.events{
+  padding-top: 1rem;
+  position: relative;
+}
+
+.events img{
+  display: block;
+}
+
+.events figcaption{
+  position: absolute;
+  padding-top: 0;
+  z-index: 1;
+  float: right;
+  top:20%;
+  left:55%;
+}
+
+/*figure.event-banner-image figcaption {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+
+}
+
+.event-banner-image{
+  position: relative;
+  overflow: hidden;
+  background: #000;
+  width:100%;
+  margin:0;
+}
+
+figure.event-banner-image h2 {
+  margin: 0;
+  width: 100%;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-family: "PT_Sans-Web-Regular",sans-serif;
+  font-size: 1.2rem;
+  color: white;
+}*/
 
 
 
@@ -722,7 +786,7 @@ p.twelve {
 /*____________________________________________________________________header__________________*/
 @media only screen and (max-width: 768px) {
 
-  .header {
+  .header，.website.header{
     top: 0;
     position: fixed;
     z-index: 5;
