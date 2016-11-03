@@ -5,7 +5,7 @@
 }
 
 
-/* CLEARFIX */
+/*clear fix*/
 
 .row:after{
   content: "";
@@ -13,7 +13,7 @@
   clear: both;
 }
 
-/*DEMO STYLING */
+/*demo*/
 
 .demo{
    background: #e5e5e5;
@@ -23,7 +23,7 @@
    padding-top: 15px;
 }
 
- /* COLUMNS */
+ /*columns*/
 
 .column, .columns{
   display: block;
@@ -49,8 +49,8 @@
 }
 
 
-/* */
- @media (max-width: 768px) {
+/*media query*/
+ @media (max-width: 48rem) {
 
 .page{
     margin-top:0;
@@ -61,7 +61,7 @@
     overflow: hidden;
  }
  
- .one { width: 48% }
+.one { width: 48% }
 .two { width: 48% }
 .three { width: 48% }
 .four { width: 48% }
@@ -77,7 +77,7 @@
  }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 30rem) {
 
 .page{
     margin-top:0;

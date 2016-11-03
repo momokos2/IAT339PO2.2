@@ -232,6 +232,126 @@ pre{
   color:#333;
 }
 
+/*____________________________________________________________footer______________*/
+footer{
+  background: rgb(200,200,200);
+  margin:0px;
+  padding:2rem 0;
+  min-width:100%;
+  max-width:100%;
+  height:auto;  
+  height:auto;
+  position:relative;
+  right:0;
+  left:0;
+  bottom:0;
+}
+
+.footer-div{
+  padding:1% 15%;
+  width: 100%
+}
+
+.footer-div .footer-component ul{
+  list-style:none;
+  padding-bottom: 1.5rem;
+  text-align: left;
+}
+
+.footer-div .footer-component ul a{
+  text-decoration: none;
+  color:#333;
+}
+
+.footer-div .footer-component ul a:hover{
+  color:#a78a7f;
+}
+
+.footer-div .footer-component .footer-title{
+  font-family: "PT_Sans-Web-Regular",sans-serif;
+  padding-bottom: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.footer-div .footer-component ul li{
+  font-family: "PT_Sans-Web-Regular",sans-serif;
+  padding-bottom: 0.4rem;
+}
+
+.newsletter {
+  overflow: hidden;
+  height: 40px;
+  width: 200px;
+  position: relative;
+}
+
+.newsletter input {
+  width: 100%;
+  border: 1px solid white;
+  height: 40px;
+  padding: 10px 0 10px 15px;
+  text-transform: uppercase;
+  outline: none;
+  -moz-transition: border 0.2s ease;
+  -o-transition: border 0.2s ease;
+  -webkit-transition: border 0.2s ease;
+  transition: border 0.2s ease;
+  font-size: 0.8rem;
+}
+
+.newsletter input:focus {
+  border: 1px solid #999;
+}
+
+.newsletter button {
+  position: absolute;
+  z-index: 4;
+  right: 2px;
+  top: 2px;
+  height: 36px;
+  font-size: 0.8rem;
+  border: none;
+  background-color: #973241;
+  -moz-transition: background-color 0.3s ease, width 0.3s ease;
+  -o-transition: background-color 0.3s ease, width 0.3s ease;
+  -webkit-transition: background-color 0.3s ease, width 0.3s ease;
+  transition: background-color 0.3s ease, width 0.3s ease;
+  color: white;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
+  @inlude transform(translateZ(0));
+}
+
+.newsletter button:hover {
+  width: 60px;
+}
+
+footer .social-icon {
+      font-size: 1rem;
+      text-align: left;
+    }
+
+    footer .social-icon a {
+      color: #333;
+      padding: 0 10px 0 10px;
+    }
+
+    footer .social-icon a:hover {
+      color: #a78a7f;
+      transition: 0.5s;
+    }
+
+    footer .button{
+      border-width: 1px;
+      width:60px;
+      height:38px;
+    }
+
 /*___________________________________________________________submit & reset button_______________*/
 .button {
     border: 2px solid #9d3625;
@@ -648,4 +768,17 @@ ul li{
 }
 }
 
+@media(max-width:48rem){
+  footer{
+    padding:0.8rem 0;
+  }
+  .footer-div .footer-component .footer-title{
+    font-size:0.8rem;
+    padding-bottom: 0.5rem;
+  }
+  .footer-div .footer-component ul li{
+    font-size:0.8rem;
+    padding-bottom: 0.2rem;
+  }
+}
 
