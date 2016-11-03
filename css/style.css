@@ -50,25 +50,6 @@ div {
 	text-decoration: none;
 }
 
-
-
-.menu a {
-  line-height: 3rem;
-  padding: 0 1.2rem;
-  text-decoration: none;
-  font-size: 1rem;
-  color:#333;
-  font-family:"Exo2-Regular", sans-serif;
-  display:inline-block;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-}
-
-.menu a:hover {
-  color: #a78a7f;
-}
-
 .nav-section a:hover{
 	color: #9d3625;
 }
@@ -169,31 +150,86 @@ pre{
 /*===========================================================website sheet styling====================*/
 
 /*-----------------------------------------------------------general styling-----------------------*/
+/*____________________________________________________________.site-containter, .content-wrapper__*/
 
-/*in-text link */
-a.in-text{
-	color: #a78a7f;
+.content-wrapper{
+  margin:0 15% 0 15%;
+  padding-top: 100px;
 }
 
-a.in-text:hover {
-	color: #973241; 
-	transition: all ease .5s;
+
+/*_________________________________________________________header brandname/logo_______________*/
+
+.header {
+    top: 0;
+  position: fixed;
+  z-index: 5;
+  height:3rem;
+  width:100vw;
+  padding:0 15%;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
+  box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
+  background-color: white;
+}
+.header-logo {
+  padding-right: 30%;
+  float: left;
+  line-height: 3rem;
+  font-family: "Lora-Regular", serif;
+  font-size:1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  color:black;
 }
 
-/*nav*/
-.nav {
+
+/*_________________________________________________________main navigation___________________________*/
+
+.menu a {
+  line-height: 3rem;
+  padding: 0 1.2rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color:#333;
+  font-family:"Exo2-Regular", sans-serif;
+  display:inline-block;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+}
+
+.menu a:hover {
+  color: #a78a7f;
+}
+
+.menu {
+  float: left;
+}
+
+/*____________________________________________________________login and bag______________*/
+.login-and-bag{
   list-style: none;
+  display: inline-block;
+  float:right;
+  padding-top:15px;
 }
 
-/*nav button*/
-.nav-button ul.nav{
-	padding-left: 0;
+.login-and-bag li{
+  box-sizing: border-box;
+  display:inline-block;
 }
 
-.nav-button ul.nav a{
-	display:block;
-	width: 50px;
-	text-align: center;
+.login-and-bag li a{
+  font-family: "PT_Sans-Web-Regular",sans-serif;
+  font-size: 0.875rem;
+  padding-left: 0.5rem;
+  text-decoration: none;
+  color:#a9a9a9;
+}
+
+.login-and-bag li a:hover{
+  color:#333;
 }
 
 /*___________________________________________________________submit & reset button_______________*/
@@ -271,6 +307,16 @@ a.in-text:hover {
 
 .button:hover .easing-up, .button:hover .easing-down  {
     height:40px;
+}
+
+/*_____________________________________________________________________in-text link__________ */
+a.in-text{
+  color: #a78a7f;
+}
+
+a.in-text:hover {
+  color: #973241; 
+  transition: all ease .5s;
 }
 
 /*______________________________________________________________________Text Input___________*/
@@ -489,11 +535,11 @@ ul li{
 	color:#c9b9aa;
 	margin:1px 0;
 	display: block;
-	 margin-bottom: 12px;
+	margin-bottom: 12px;
 }
 
-/*_______________________________________________________________________web grid structure*/
-/*_______________________________________________________________________see grid.css*/
+/*_______________________________________________________________________web grid structure______*/
+/*_______________________________________________________________________see grid.css___________*/
 
 
 /*===============================================================citation page styling====================*/
@@ -503,6 +549,103 @@ ul li{
 	margin-right: 30px;
 }
 
+/*==================================================================@media styling================*/
+/*___________________________________________________________________container__________________*/
+@media only screen and (max-width: 768px) {
+  .site-pusher,
+  .site-container {
+    height: 100%;
+  }
 
+/*  .site-container {
+    overflow: hidden;
+  }*/
+
+  .site-pusher {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+
+  .with--sidebar .site-pusher {
+    -webkit-transform: translateX(250px);
+    transform: translateX(250px);
+  }
+  .with--sidebar .site-cache {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+
+/*____________________________________________________________________header__________________*/
+@media only screen and (max-width: 768px) {
+
+  .header {
+    top: 0;
+    position: fixed;
+    z-index: 5;
+    width:100vw;
+    padding:0 0;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
+    box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
+    background-color: white;
+  }
+
+  .header-icon {
+    position: relative;
+    display: block;
+    float: left;
+    width: 50px;
+    height: 3rem;
+    cursor: pointer;
+  }
+
+  .header-icon:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1rem;
+    left: 15px;
+    top:0.6rem;
+    box-shadow: 0 10px 0 1px #000, 0 16px 0 1px #000, 0 22px 0 1px #000;
+  }
+
+  .menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    -webkit-transform: translateX(-250px);
+  }
+
+  .menu a {
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid #dcdcdc;
+
+  }
+}
+
+@media(max-width:65rem){
+  .header-logo {
+  padding-right: 10%;  
+}
+}
+
+@media(max-width:51rem){
+  .header-logo {
+  padding-right: 3%;  
+}
+}
 
 
