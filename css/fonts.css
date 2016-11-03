@@ -76,4 +76,11 @@
 	src: url('../fonts/PT_Sans-Web-Regular.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: 'SourceSansPro-Regular';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+}
+
 

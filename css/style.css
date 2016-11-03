@@ -154,14 +154,14 @@ pre{
 
 .content-wrapper{
   margin:0 15% 0 15%;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 
 /*_________________________________________________________header brandname/logo_______________*/
 
 .header {
-    top: 0;
+  top: 0;
   position: fixed;
   z-index: 5;
   height:3rem;
@@ -173,7 +173,7 @@ pre{
   background-color: white;
 }
 .header-logo {
-  padding-right: 30%;
+  padding-right: 20%;
   float: left;
   line-height: 3rem;
   font-family: "Lora-Regular", serif;
@@ -578,11 +578,10 @@ h1.website span{
 
 /*______________________________________________________________________paragraph_____________*/
 p{
-	font-family: 'Caramaran-Light', sans-serif;
+	font-family: 'SourceSansPro-Regular', sans-serif;
 	font-size:1rem;
-  font-weight: 400;
 	color:#666;
-  line-height: 130%;
+  line-height: 150%;
 }
 
 ul li{
@@ -604,6 +603,12 @@ ul li{
 	font-family: 'Caramaran-Light', sans-serif;
 	font-size:1rem;
 	color:#666;
+}
+
+
+/*_____________________________________________________________________image________________*/
+img{
+  width: 100%;
 }
 
 /*____________________________________________________________________product list___________*/
@@ -660,6 +665,15 @@ ul li{
 
 /*_______________________________________________________________________web grid structure______*/
 /*_______________________________________________________________________see grid.css___________*/
+
+/*===============================================================about.html styling==============*/
+p.twelve {
+  padding:20px 0 30px 0 ;
+}
+
+
+
+
 
 
 /*===============================================================citation page styling====================*/
