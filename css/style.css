@@ -982,7 +982,8 @@ a.expand:hover{
 }
 
 /*------------------------------------------------------------bag-login.html styling----------------*/
-.bag-login .step-section .step-1 a, .bag-login .step-section .step-2 a{
+.bag-login .step-section .step-1 a, 
+.bag-login .step-section .step-2 a{
   font-family:"Caramaran",sans-serif;
   font-weight: 700;
 }
@@ -1051,6 +1052,86 @@ a.expand:hover{
 
 .new-customer .login-form{
   margin-top: 1rem;
+}
+
+/*------------------------------------------------------------bag-checkout.html styling----------------*/
+.bag-checkout .step-section .step-1 a, 
+.bag-checkout .step-section .step-2 a, 
+.bag-checkout .step-section .step-3 a{
+  font-family:"Caramaran",sans-serif;
+  font-weight: 700;
+}
+
+.checkout-section{
+  margin-top: 2rem;
+  height:auto;
+}
+
+.checkout-component{
+  height:auto;
+  text-align: left;
+  padding-top: 1.5rem;
+  background-color: #f0f0f0;
+  padding-left:1.5%;
+  padding-right:1.5%;
+}
+
+.checkout-component h3{
+  font-size: 0.95rem;
+}
+
+.bag-checkout .checkout-summary{
+  width:auto;
+  padding-top: 0.5rem;
+}
+
+.checkout-pg-img{
+  width:100%;
+  padding-right:0.3rem;
+}
+
+.bag-checkout .checkout-summary ul{
+  list-style: none;
+}
+
+.bag-checkout .checkout-summary ul li{
+  color:#333;
+}
+
+.checkout-summary-product{
+  font-family: "Lora-Regular",serif;
+  font-weight: 700;
+}
+
+.checkout-summary-color{
+  font-family: "PT_Sans-Web-Regular",sans-serif;
+  font-size:0.8rem;
+  padding-bottom: 0.5rem;
+}
+
+.checkout-summary-price{
+  font-family: "PT_Sans-Web-Regular",sans-serif;
+  font-size:0.8rem;
+  font-weight: 700;
+}
+
+.checkout-summary .row{
+  padding-bottom: 1.5rem;
+}
+
+.checkout-summary p{
+  font-family: "Catamaran-Regular",sans-serif;
+  font-weight:700;
+}
+
+.checkout-summary .checkbox{
+  padding-top: 0.8rem;
+  width:auto;
+}
+
+.checkout-summary .button{
+  width:100%;
+  margin-bottom: 1rem;
 }
 
 /*------------------------------------------------------------about.html styling----------------*/
