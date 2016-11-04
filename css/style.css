@@ -1409,6 +1409,17 @@ figure p.row{
 }
 
 
+/*------------------------------------------------------------product-list.html-----------------------------*/
+
+.product-list-banner{
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.product-list-wrap .product-item{
+  margin-bottom: 3rem;
+}
+
 /*==================================================================@media styling================*/
 /*___________________________________________________________________container__________________*/
 @media only screen and (max-width: 48rem) {
