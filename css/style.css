@@ -177,6 +177,13 @@ pre{
   transform:translate(0,1.5rem);
 }
 
+.line-separator-2{
+  height: 1px; 
+  background: #717171;
+  border-bottom: 1px solid gainsboro;
+  transform:translate(0,-1.5rem);
+}
+
 .hcenter{
   margin-left: auto;
   margin-right: auto;
@@ -1325,6 +1332,28 @@ input.star {
   .write-review .button{
    width:100%;
    margin-bottom: 1rem;
+  }
+}
+
+/*------------------------------------------------------------order-confirmation.html styling----------------*/
+.confirmation-notice{
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  padding-bottom: 1rem;
+}
+
+.confirmation-notice h2,h3,p{
+  margin-bottom: 1rem;
+}
+
+.order-confirmation .button{
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 30rem) {
+  .order-confirmation .button{
+   width:100%;
   }
 }
 
