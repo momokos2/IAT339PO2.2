@@ -1380,6 +1380,7 @@ p.twelve {
 .events{
   padding-top: 1rem;
   position: relative;
+  margin-bottom: 1rem;
 }
 
 .events img{
@@ -1393,36 +1394,20 @@ p.twelve {
   float: right;
   top:20%;
   left:55%;
+  margin-left: 2%;
 }
 
-/*figure.event-banner-image figcaption {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+.inside-image-button{
+  margin-top: 2rem;
+  margin-left: 30%;
+  margin-right: auto;
+}
+
+figure p.row{
   text-align: center;
-
+  margin-top: 1rem;
 }
 
-.event-banner-image{
-  position: relative;
-  overflow: hidden;
-  background: #000;
-  width:100%;
-  margin:0;
-}
-
-figure.event-banner-image h2 {
-  margin: 0;
-  width: 100%;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-decoration: underline;
-  font-family: "PT_Sans-Web-Regular",sans-serif;
-  font-size: 1.2rem;
-  color: white;
-}*/
 
 /*==================================================================@media styling================*/
 /*___________________________________________________________________container__________________*/
