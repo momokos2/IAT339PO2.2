@@ -172,14 +172,18 @@ pre{
 
 .line-separator{
   height: 1px; 
-    background: #717171;
-    border-bottom: 1px solid gainsboro;
-    transform:translate(0,1.5rem);
+  background: #717171;
+  border-bottom: 1px solid gainsboro;
+  transform:translate(0,1.5rem);
 }
 
 .hcenter{
   margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
+}
+
+.center-button{
+  text-align: center;
 }
 
 .in-line{
@@ -1134,6 +1138,101 @@ a.expand:hover{
   margin-bottom: 1rem;
 }
 
+/*------------------------------------------------------------bag-review.html styling----------------*/
+.bag-review .step-section .step-1 a, 
+.bag-review .step-section .step-2 a, 
+.bag-review .step-section .step-3 a,
+.bag-review .step-section .step-4 a{
+  font-family:"Caramaran",sans-serif;
+  font-weight: 700;
+}
+
+.info-review-section{
+  padding-left: 8%;
+  padding-right: 5%;
+  width:auto;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #ddd; 
+  background-color: #f0f0f0
+}
+
+
+.info-review-component ul{
+  list-style: none;
+}
+
+.info-review-component-title{
+  font-size:1rem;
+  color:#333;
+  font-family: "Catamaran-Bold",sans-serif;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+.info-review-component-list{
+  color:#333;
+  font-size:1rem;
+  font-family: "Catamaran-Light",sans-serif;
+  font-weight: 200;
+}
+
+
+.layout-2{
+    display:none;
+}
+
+@media only screen and (max-width: 30rem) {
+  .layout-1{
+    display:none;
+  }
+  .layout-2{
+    display:block;
+  }
+}
+
+.confirmation-qty{
+  font-family: "Catamaran-Bold",sans-serif;
+  font-size:1.2rem;
+  color:#333;
+}
+
+
+ul.confirmation-total{
+  padding-top: 1.2rem;
+  list-style: none;
+  float:right;
+}
+
+ul.confirmation-total li{
+  display:inline-block;
+  padding-left:2rem;
+  font-family:"PT_Sans-Web-Regular",sans-serif;
+  font-size: 1.1rem;
+  color:#333;
+  font-weight: 700;
+}
+
+.order-confirm-button{
+  margin-top: 4rem;
+}
+
+.bag-review .description-section{
+  padding-left: 8%;
+}
+
+.bag-review .button{
+  margin-top: 3rem;
+}
+
+@media only screen and (max-width: 30rem) {
+  .bag-review .button{
+   width:100%;
+  }
+}
+
+
+
 /*------------------------------------------------------------about.html styling----------------*/
 p.twelve {
   padding:20px 0 30px 0 ;
@@ -1232,7 +1331,7 @@ figure.event-banner-image h2 {
   }
 }
 
-@media only screen and (max-width: 48rem) {
+@media only screen and (max-width: 30rem) {
   .content-wrapper{
     margin:0 5% 0 5%;
   }
