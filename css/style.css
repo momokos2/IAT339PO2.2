@@ -1155,6 +1155,9 @@ a.expand:hover{
   margin-bottom: 1rem;
 }
 
+.checkout-term{
+  color:#a78a7f;
+}
 /*------------------------------------------------------------bag-review.html styling----------------*/
 .bag-review .step-section .step-1 a, 
 .bag-review .step-section .step-2 a, 
@@ -1353,7 +1356,7 @@ input.star {
   padding-bottom: 1rem;
 }
 
-.confirmation-notice h2,h3,p{
+.confirmation-notice h2,h3{
   margin-bottom: 1rem;
 }
 
