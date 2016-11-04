@@ -16,3 +16,5 @@ Detail Images
 http://www.polette.com/en/classic/swan-black.html
 Event Image
 http://ifda.net/wordpress/wp-content/uploads/2016/08/TraditionalMarketing.jpg
+Product Images
+http://visualmass.co/collections/featured
