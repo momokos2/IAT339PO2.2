@@ -38,84 +38,69 @@
 	          </ul>		      
 	   		</header>
 
-	   		<div class="content-wrapper bag-overview">
+	   		<div class="content-wrapper write-review">
 
-				<h1 class="website"><span>Shopping Bag</span></h1> 
+				<h1 class="website"><span>Your Review</span></h1> 
 
-	  			<div class="row step-section">
-	    
-					<div class="step-1 three columns"><div><a href="bag-overview.html">OVERVIEW</a></div></div>
-					<div class="step-2 three columns"><div><a href="#">LOGIN</a></div></div>
-					<div class="step-3 three columns"><div><a href="#">CHECKOUT</a></div></div>
-					<div class="step-4 three columns last"><div><a href="#">REVIEW</a></div></div>
+				<div class="review-content row">
 
-				</div> <!-- end of step section -->
-
-
-				<div class="row description-section">
-
-					<div class="description-component three columns">
-					  <div class="description-title">Product</div>
-					  <img class="overview-pg-img" src="img/product-06-small.jpg" alt="product image"> 
+					<div class="four columns">
+						<img class="overview-pg-img" src="img/product-06.jpg" alt="a glasses image"> 
 					</div>
 
-					<div class="description-component three columns">
-					  <div class="description-title">Detail</div>
-					  <ul>
-					    <li class="overview-pg-product">Braden</li>
-					    <li class="overview-pg-color">Black</li>
-					    <li class="overview-pg-description">Two years warranty from the day of purchase. Free return within 30 days.</li>
-					  </ul>
+					<div class="eight columns last">
+						<ul>
+							<li class="write-review-name">Braden</li>
+							<li class="write-review-price">$212.94</li>
+							<li><p>The Braden captures the cultural vibe of Northern California. This modern rectangle for men and women projects a fashion-forward, erudite look. The Sausalito is for anyone who wants to make a sophisticated and chic statement with their eyeglasses or sunglasses. We gave the classic square style a modern profile with more angular lines and narrow temple arms, as well as a deeper bridge. </p></li>
+							<li>
+								<div class="my-form">
+									<div class="text-input">
+										<label for="nickname">Nick Name</label>
+										<input id="nickname" type="text" required="required"/>
+									</div>
+
+									<fieldset class="score">
+
+									  <p class="rating-title">Rating</p>								 									  
+										  <input class="star" type="radio" id="score-5" name="score" value="5"/>
+										  <label title="5 stars" for="score-5">5 stars</label>
+										  
+										  <input class="star" type="radio" id="score-4" name="score" value="4"/>
+										  <label title="4 stars" for="score-4">4 stars</label>
+										  
+										  <input class="star" type="radio" id="score-3" name="score" value="3"/>
+										  <label title="3 stars" for="score-3">3 stars</label>
+										  
+										  <input class="star" type="radio" id="score-2" name="score" value="2"/>
+										  <label title="2 stars" for="score-2">2 stars</label>
+										  
+										  <input class="star" type="radio" id="score-1" name="score" value="1"/>
+										  <label title="1 stars" for="score-1">1 stars</label>
+									  
+									</fieldset>
+
+									<div class="text-input">
+										<label for="textarea">Comment</label>
+										<textarea id="textarea" required="required"></textarea>
+									</div>
+
+									<a href="#" class="button in-line left">
+										<p>Submit</p>
+										<div class="easing-up"></div>
+									</a>
+									<a href="#" class="button in-line right">
+										<p>Reset</p>
+										<div class="easing-down"></div>
+									</a>
+
+								</div>
+							</li>
+						</ul>
+
 					</div>
 
-					<div class="description-component three columns">
-					  <div class="description-title">Quantity</div>
-					    <form class="quantity">
-					      <input class="quantity-selector" type="number" name="quantity"
-					      min="1" max="100" step="1" value="1">
-					    </form>
-					</div>
-
-					<div class="description-component three columns last">
-					  <div class="description-title">Price</div>
-					  <p class="overview-pg-price">CAD 100.00</p>
-					</div>
-
-					<a class="fa fa-trash-o" aria-hidden="true"></a>
-
-				</div> <!-- end of description section -->
-
-
-				<div class="summary-section">
-
-					<div class="promotion-code in-line">
-						
-						<a href="#" class="expand hide-this">Have a promotion code?</a>
-
-						<div class="promotion-section">
-						   <form class='newsletter'>
-						   	<input placeholder='Promotion Code' type='text'>
-						   	<button>ENTER</button>
-						  </form>				 
-						</div>
-
-					</div>
-
-					<ul class="in-line">
-					<li>Total</li>
-					<li>CAD 100.00</li>
-					</ul>
-
-				</div><!--  end of summary section -->
-
-				<a href="product-list.html" class="button contuine in-line">
-					<p>Contuine Shopping</p>
-					<div class="easing-up"></div>
-				</a>
-				<a href="bag-login.html" class="button next in-line">
-					<p>Next</p>
-					<div class="easing-up"></div>
-				</a>
+				</div>
 
 	   		</div> <!-- end content-wrapper -->
 

@@ -884,7 +884,7 @@ a.fa-trash-o:hover{
   font-family:"Catamaran-Regular",sans-serif;
   font-size: 0.9rem;
   color:#666;
-  padding-top: 0.5rem;
+  padding-top: 0.2rem;
 }
 
 .description-section .description-component ul .overview-pg-description{
@@ -1231,7 +1231,102 @@ ul.confirmation-total li{
   }
 }
 
+/*------------------------------------------------------------write-review.html styling----------------*/
+.review-content{
+  padding-top: 1rem;
+}
 
+.write-review ul{
+  list-style: none;
+}
+
+.write-review-name{
+  font-family: "Lora-Regular",serif;
+  font-size: 1.2rem;
+  color:#333;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.write-review-price{
+  font-family: "PT_Sans-Web-Regular",sans-serif;
+  font-size: 1rem;
+  color:#333;
+  padding-bottom: 1rem;
+}
+
+.rating-title{
+  padding-bottom: 1rem;
+  transform: translate(0.5rem, 0);
+  color:#a78a7f;
+}
+
+.write-review img{
+  width:100%;
+}
+
+input.star {
+  position:absolute;
+  top: -2em;
+  clip:rect(0,0,0,0);
+}
+
+.score {
+  direction: rtl;
+  text-align: left;
+  border: 0;
+  font-size: 0;
+  margin-left: 0;
+  padding-left: 0;
+  transform: translate(-0.5rem, 0);
+  padding-bottom: 0.7rem;
+}
+
+.score p{
+  padding-bottom: 0;
+}
+
+.score label {
+  font-size: 32px; font-size: 2rem;
+  line-height: 32px; line-height: 2rem;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 1.2em;
+  height: 1em;
+  overflow: hidden;
+  text-indent: 100%;
+}
+
+.score label:before {
+   content: "☆";
+   position: absolute;
+   top: 0; 
+   left: 0; 
+   right: 0; 
+   bottom: 0;
+   text-indent: 0;
+   line-height: 1em;
+   color: #a9a9a9;
+}
+
+.score label:hover:before,
+.score label:hover ~ label:before,
+.score input:checked ~ label:before {
+   content: "★";
+   color: #a78a7f;
+}
+.score label:active {
+  position: relative;
+  top: 1px;
+}
+
+@media only screen and (max-width: 48rem) {
+  .write-review .button{
+   width:100%;
+   margin-bottom: 1rem;
+  }
+}
 
 /*------------------------------------------------------------about.html styling----------------*/
 p.twelve {
