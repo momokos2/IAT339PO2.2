@@ -1,17 +1,18 @@
+//promotion input field
 $(document).ready(function() {
     $('.expand').click(function(e) {
         e.preventDefault();
-        $('section').slideUp('normal');
+        $('.promotion-section').slideUp('normal');
         if ($(this).next().is(':hidden') === true) {
             $(this).addClass('on');
             $(this).next().slideDown('normal');
         }
     });
-    $('section').hide();
+    $('.promotion-section').hide();
 });
 
 
-
+//photo gallary
 $(function() {
   
   var photoGallery = function($photoGalleryElement) {
@@ -37,13 +38,13 @@ $(function() {
   }
   
   $.each($('.photo-gallery'), function() {
-    // Try commenting out this line below to see no-js functionality!
     var gallery = new photoGallery( $(this) );
   });
   
 });
 
 
+//side menu
 $(document).ready(function(){
 
   (function($) {
@@ -60,7 +61,6 @@ $(document).ready(function(){
   })(jQuery);
 
 });
-
 
 
 

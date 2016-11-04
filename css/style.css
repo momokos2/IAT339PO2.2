@@ -137,10 +137,6 @@ pre{
 	margin:0;
 }
 
-.in-line{
-	display: inline-block;
-}
-
 .example .product-item{
   margin-right: 2%;
   text-align: center;
@@ -163,16 +159,41 @@ pre{
 /*===========================================================website sheet styling====================*/
 
 /*-----------------------------------------------------------general styling-----------------------*/
-/*____________________________________________________________.site-containter, .content-wrapper__*/
+/*____________________________________________________________helper class & container_____________*/
 
 .content-wrapper{
   margin:0 15% 0 15%;
-  padding-top: 75px;
+  padding-top: 80px;
 }
 
 .push{
   height:10rem;
 }
+
+.line-separator{
+  height: 1px; 
+    background: #717171;
+    border-bottom: 1px solid gainsboro;
+    transform:translate(0,1.5rem);
+}
+
+.hcenter{
+  margin-left: auto;
+    margin-right: auto;
+}
+
+.in-line{
+  display: inline-block;
+}
+
+.left{
+  float:left;
+}
+
+.right{
+  float:right;
+}
+
 /*_________________________________________________________header brandname/logo_______________*/
 
 
@@ -232,6 +253,7 @@ pre{
   display: inline-block;
   float:right;
   padding-top:15px;
+  transform:translate(-1rem,0);
 }
 
 .login-and-bag li{
@@ -390,10 +412,10 @@ footer .social-icon {
     position:relative;
     padding:0px;
     text-align:center;
-    vertical-align: center;
+    vertical-align: middle;
     text-transform:uppercase;
     text-decoration: none;
-    color:#888888;
+    color:#333;
     font-size:0.8rem;
     font-weight:600;
     line-height:40px;
@@ -461,23 +483,27 @@ a.in-text:hover {
 /*______________________________________________________________________Text Input___________*/
 .my-form input, .my-form textarea, .my-form select
 {
-  padding: 5px;
+  padding: 0.6rem 0 0.6rem 5px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 0px;
   border: 1px solid #d4d4d4;
   line-height: 20px;
   text-indent: 5px;
-  width: 400px;   
+  width: 100%;   
   display: block;
   clear: both;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.9rem;
   font-size: 1rem;
   font-family: "PT_Sans-Web-Regular",sans-serif;
   outline: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+}
+
+.example .my-form input, .example .my-form textarea, .example .my-form select{
+  width:25rem;
 }
 
 .my-form label{
@@ -584,7 +610,7 @@ h1.website span{
  h3{
 	font-family: 'Catamaran-Regular', sans-serif;
 	font-size:1.4rem;
-	color:#666;
+	color:#333;
 	margin:1px 0;
 }
 
@@ -603,25 +629,25 @@ p{
   line-height: 150%;
 }
 
+/*______________________________________________________________________list___________*/
+ol li{
+	color:#c9b9aa;
+}
+
+ol li span{
+	font-family: 'Caramaran-Light', sans-serif;
+	font-size:1rem;
+	color:#666;
+}
+
 ul li{
-	color:#c9b9aa;
+  color:#c9b9aa;
 }
 
-.example ul li span{
-	font-family: 'Caramaran-Light', sans-serif;
-	font-size:1rem;
-	color:#666;
-}
-
-/*______________________________________________________________________numbered list___________*/
-.example ol li{
-	color:#c9b9aa;
-}
-
-.example ol li span{
-	font-family: 'Caramaran-Light', sans-serif;
-	font-size:1rem;
-	color:#666;
+ul li span{
+  font-family: 'Caramaran-Light', sans-serif;
+  font-size:1rem;
+  color:#666;
 }
 
 
@@ -775,6 +801,258 @@ figure.home-display-img p {
 }
 
 
+/*------------------------------------------------------------bag-overview.html styling----------------*/
+.step-section{
+  text-align:center;
+  display:inline-block;
+  width:100%;
+  line-height: 5.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #000; 
+}
+
+ @media only screen and (max-width: 48rem) {
+
+.step-section{
+  line-height: 2rem;
+  padding-bottom: 1rem;
+  }
+    
+ }
+
+.step-section .step-1 a, .step-section .step-2 a, .step-section .step-3 a, .step-section .step-4 a{
+  text-decoration: none;
+  font-family:"Caramaran-Light",sans-serif;
+  color:#666;
+  font-size: 0.8rem;
+}
+
+.bag-overview .step-section .step-1 a{
+  font-family:"Caramaran",sans-serif;
+  font-weight: 700;
+}
+
+.description-section{
+  text-align:left;
+  display:inline-block;
+  width:100%;
+  padding-bottom: 1.5rem;
+  margin-bottom: 0;
+  border-bottom: 1px solid #000; 
+  font-weight: 700;
+}
+
+.description-section .description-title{
+  padding-bottom:1rem;
+  color:#a78a7f;
+}
+
+.overview-pg-img{
+  width:100%;
+  padding-right:2rem;
+}
+
+.fa-trash-o{
+  float:right;
+}
+
+
+a.fa-trash-o:hover{
+  color: #973241;
+}
+
+.description-section .description-component {
+  margin-top: 1rem;
+}
+
+.description-section .description-component ul{
+  list-style: none;
+  padding:0;
+}
+
+.description-section .description-component ul .overview-pg-product{
+  font-family:"Lora-Regular",serif;
+  font-size: 1.2rem;
+  color:#333;
+}
+
+.description-section .description-component ul .overview-pg-color{
+  font-family:"Catamaran-Regular",sans-serif;
+  font-size: 0.9rem;
+  color:#666;
+  padding-top: 0.5rem;
+}
+
+.description-section .description-component ul .overview-pg-description{
+  font-family:"Catamaran-Light",sans-serif;
+  font-size: 0.6rem;
+  color:#666;
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+
+.quantity-selector{
+  border:solid #666 0.5px;
+  width:100%;
+  font-size: 1rem;
+  font-family:"Catamaran-Light",sans-serif;
+  padding:0.2rem 0 0.2rem 0.2rem;
+}
+
+.quantity{
+  padding-right: 2rem;
+}
+
+p.overview-pg-price{
+  font-size: 1rem;
+  font-family:"PT_Sans-Web-Regular",sans-serif;
+  color:#333;
+}
+
+.fa.fa-trash-o{
+  cursor:pointer;
+}
+
+.summary-section{
+  display:inline-block;
+  background-color: rgba(167,138,127,0.1);
+  height:auto;
+  width:100%;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding:1rem 1rem 2.5rem 1rem;
+}
+
+.summary-section ul{
+  list-style: none;
+  float:right;
+}
+
+@media only screen and (max-width: 30rem) {
+  .summary-section ul{
+  list-style: none;
+  float:left;
+  padding-top: 1rem;
+  }
+}
+
+.summary-section ul li{
+  display:inline-block;
+  font-family:"PT_Sans-Web-Regular",sans-serif;
+  font-size: 1.1rem;
+  color:#333;
+  font-weight: 700;
+}
+
+.summary-section ul li:first-child{
+  padding-right: 1rem;
+}
+
+.expand {
+  color: black;
+  display: block;
+  text-decoration: none;
+}
+
+.promotion-section {
+  padding-top: 15px;
+
+  p {
+    color: lighten(black, 20%);
+    margin: 5px 0 15px;
+  } 
+
+}
+
+.promotion-code{
+  max-width: 400px;
+}
+
+a.expand{
+  font-family:"PT_Sans-Web-Reglar",sans-serif;
+  color:#666;
+}
+
+a.expand:hover{
+  color:#a78a7f; 
+}
+
+.next{
+  float:right;
+}
+
+/*------------------------------------------------------------bag-login.html styling----------------*/
+.bag-login .step-section .step-1 a, .bag-login .step-section .step-2 a{
+  font-family:"Caramaran",sans-serif;
+  font-weight: 700;
+}
+
+.login-section{
+  margin-top: 2rem;
+}
+
+
+.login-support{
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.login-support p{
+  font-family: "PT_Sans-Web-Regular",sans-serif;
+  color:#666;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.returning-customer, .new-customer{
+  height:22rem;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.returning-customer{
+  border:solid 1px #f0f0f0;
+}
+
+.returning-customer .button{
+  margin-top: 0.5rem;
+}
+
+.my-form.login-form{
+    margin-top: 1.5rem;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.my-form.login-form .checkbox{
+    text-align: left;
+}
+
+.login-form .button{
+  width:100%;
+}
+
+.new-customer{
+  background-color: #f0f0f0;
+  max-height: auto;
+}
+
+.new-customer .new-intro{
+    margin-top: 1.5rem;
+    margin-left:10%;
+    margin-right:10%; 
+    font-size:0.9rem; 
+    font-family: "PT_Sans-Web-Regular",sans-serif;
+}
+
+.new-customer .button{
+  margin-top: 0.2rem; 
+}
+
+.new-customer .login-form{
+  margin-top: 1rem;
+}
+
 /*------------------------------------------------------------about.html styling----------------*/
 p.twelve {
   padding:20px 0 30px 0 ;
@@ -841,15 +1119,11 @@ figure.event-banner-image h2 {
 
 /*==================================================================@media styling================*/
 /*___________________________________________________________________container__________________*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 48rem) {
   .site-pusher,
   .site-container {
     height: 100%;
   }
-
-/*  .site-container {
-    overflow: hidden;
-  }*/
 
   .site-pusher {
     -webkit-transition-duration: 0.3s;
@@ -871,9 +1145,22 @@ figure.event-banner-image h2 {
   }
 }
 
+@media only screen and (max-width: 48rem) {
+  .content-wrapper{
+    margin:0 10% 0 10%;
+  }
+}
+
+@media only screen and (max-width: 48rem) {
+  .content-wrapper{
+    margin:0 5% 0 5%;
+  }
+}
+
+
 
 /*____________________________________________________________________header__________________*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 48rem) {
 
   .header，.website.header{
     top: 0;
@@ -936,6 +1223,8 @@ figure.event-banner-image h2 {
   padding-right: 3%;  
 }
 }
+
+/*____________________________________________________________________footer__________________*/
 
 @media(max-width:48rem){
   footer{
