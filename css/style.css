@@ -1512,11 +1512,41 @@ figure p.row{
 .product-list-banner{
   padding-top: 1rem;
   padding-bottom: 2rem;
+  width:100%;
+  overflow-y:auto;
 }
 
 .product-list-wrap .product-item{
   margin-bottom: 3rem;
 }
+
+.on-banner-text{
+    position: absolute;
+    top: 35%;
+    text-align: left;
+    width:22rem;
+    padding-left: 5rem;
+}
+
+.on-banner-title{
+  color:#a78a7f;
+  font-family: "Lora-Regular",serif;
+  font-weight: 700;
+  font-size: 1.9rem;
+  padding-bottom: 0.2rem;
+}
+
+.on-banner-content{
+  font-family: "Catamaran-SemiBold",sans-serif;
+  width:90%;
+}
+
+@media only screen and (max-width: 57rem) {
+  .on-banner-text{
+   display:none;
+  }
+}
+
 
 
 /*------------------------------------------------------------contact-us.html-----------------------------*/
