@@ -1275,6 +1275,10 @@ ul.confirmation-total li{
   padding-bottom: 1rem;
 }
 
+.write-review-description{
+  padding-bottom:1rem;
+}
+
 .rating-title{
   padding-bottom: 1rem;
   transform: translate(0.5rem, 0);
@@ -1420,6 +1424,118 @@ figure p.row{
   margin-bottom: 3rem;
 }
 
+
+/*------------------------------------------------------------contact.html-----------------------------*/
+
+.contact .button{
+  width:100%;
+  margin-top: 1rem;
+}
+
+.contact-img img{
+margin-top: 1rem;
+}
+
+.info-detail img{
+  width: 30%;
+  height:30%;
+}
+
+.contacts-other-info .columns{
+  margin-right:0;
+}
+
+.contacts-other-info{
+  padding-top: 2rem;
+}
+
+.icon{
+  text-align: center;
+  text-decoration: none;
+}
+
+.hours{
+  margin-left: 4rem;
+  text-decoration: none;
+  padding-top: 0.5rem;
+}
+
+@media only screen and (max-width:95.25rem ){
+  .two.icon{
+    width:15%;
+  }
+
+  .six.hours{
+    width:50%;
+    margin-left: 0;
+  }
+  .hours p{
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width:73.75rem ){
+  .two.icon{
+    width:33.3333%;
+  }
+
+  .six.hours{
+    width:100%;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  .hours p{
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width:48rem ){
+  .two.icon{
+    width:30%;
+  }
+
+  .six.hours{
+    width:100%;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  .hours p{
+    font-size: 1rem;
+  }
+  h4{
+    font-size: 1rem;
+    margin-left: 0;
+  }
+  .three.icon{
+    width:30%;
+  }
+}
+
+
+
+@media only screen and (max-width:33rem ){
+  .two.icon{
+    width:100%;
+    margin-top: 2rem;
+  }
+
+  .nine.hours{
+    width:100%;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  .hours p{
+    font-size: 1rem;
+  }
+  h4{
+    font-size: 1rem;
+    margin-left: 0;
+  }
+  .three.icon{
+    width:100%;
+  }
+}
+
 /*==================================================================@media styling================*/
 /*___________________________________________________________________container__________________*/
 @media only screen and (max-width: 48rem) {
@@ -1542,4 +1658,7 @@ figure p.row{
     padding-bottom: 0.2rem;
   }
 }
+
+
+
 
