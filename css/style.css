@@ -1519,7 +1519,7 @@ figure p.row{
 }
 
 
-/*------------------------------------------------------------contact.html-----------------------------*/
+/*------------------------------------------------------------contact-us.html-----------------------------*/
 
 .contact .button{
   width:100%;
@@ -1528,6 +1528,11 @@ figure p.row{
 
 .contact-img img{
 margin-top: 1rem;
+}
+
+.contact-description{
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .info-detail img{
@@ -1540,7 +1545,7 @@ margin-top: 1rem;
 }
 
 .contacts-other-info{
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 
 .icon{
@@ -1557,7 +1562,7 @@ margin-top: 1rem;
 #map{
       height:200px;
       width:100%;
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
 
 @media only screen and (max-width:95.25rem ){
