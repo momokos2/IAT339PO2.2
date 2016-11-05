@@ -62,7 +62,7 @@ $(document).ready(function(){
 
 });
 
-// pop up window
+// pop up window for added to bag
 var bag = $('.bag');
 
 $( ".add-to-bag-button" ).on( "click", function(){
@@ -76,6 +76,22 @@ $( ".overlay" ).on( "click",function(){
 
 $( ".bag-close" ).on("click", function(){
   $( bag).toggleClass('bag-show');
+});
+
+// pop up window for review sent confirmation
+var reviews = $('.reviews ');
+
+$( ".right" ).on( "click", function(){
+  $( reviews ).toggleClass('pop-reviews-show');
+
+});
+
+$( ".overlay" ).on( "click",function(){
+  $( reviews ).toggleClass('pop-reviews-show');
+});
+
+$( ".pop-reviews-close" ).on("click", function(){
+  $( reviews ).toggleClass('pop-reviewsshow');
 });
 
 

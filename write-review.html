@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>IKIGAI | Shopping Bag </title>
+    <title>IKIGAI | Your Review </title>
     
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -87,14 +87,38 @@
 										<textarea id="textarea" required="required"></textarea>
 									</div>
 
-									<a href="#" class="button in-line left">
-										<p>Reset</p>
-										<div class="easing-down"></div>
-									</a>
-									<a href="#" class="button in-line right">
-										<p>Submit</p>
-										<div class="easing-up"></div>
-									</a>
+									<!-- pop up window -->
+									<div class="reviews">
+										<div class="overlay"></div>
+										<div class="pop-reviews-content pop-reviews-transition">
+											<a class="pop-reviews-close" href="#"> X </a>
+											<h3> Thank you for your reviews! </h3>
+											<div class="center-button">
+												<a href="product-detail.html" class="button in-line submit-button">
+													<p>check other reviews</p>
+													<div class="easing-down"></div>
+												</a>  
+											</div> 
+											<div class="center-button">
+												<a href="homepage.html" class="button in-line submit-button">
+													<p>Home</p>
+													<div class="easing-up"></div>
+												</a>  
+											</div> 
+										</div>
+									</div>
+									<!-- end pop up window -->
+
+									<div class="write-review-buttons">
+										<a href="" class="button in-line left">
+											<p>Reset</p>
+											<div class="easing-down"></div>
+										</a>
+										<a href="#" class="button in-line right submit-button">
+											<p>Submit</p>
+											<div class="easing-up"></div>
+										</a>
+									</div>
 
 								</div>
 							</li>
