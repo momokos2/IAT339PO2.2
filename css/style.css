@@ -216,9 +216,6 @@ pre{
 }
 
 /*_________________________________________________________header brandname/logo_______________*/
-
-
-
 .website.header{
   top: 0;
   position: fixed;
@@ -231,6 +228,7 @@ pre{
   box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
   background-color: white;
 }
+
 .header-logo {
   padding-right: 20%;
   float: left;
@@ -241,9 +239,6 @@ pre{
   text-decoration: none;
   color:black;
 }
-
-
-
 
 /*_________________________________________________________main navigation___________________________*/
 
@@ -2000,11 +1995,22 @@ p.customer-name{
   }
 }
 
+@media only screen and (max-width: 48rem) {
+  .website.header{
+    padding:0 10%;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  .website.header{
+    padding:0 5%;
+  }
+}
+
 
 
 /*____________________________________________________________________header__________________*/
 @media only screen and (max-width: 48rem) {
-
   .header，.website.header{
     top: 0;
     position: fixed;
