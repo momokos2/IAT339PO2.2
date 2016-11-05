@@ -41,13 +41,15 @@
 
                   <div class="content-wrapper contact">
 
+                    <h1 class="website"> <span>Contact Us</span></h1>
+
                       <div class="contact-form row">
                             <div class="six columns contact-img ">
                                <img src="img/contact.jpg" alt="an image with text about making glasses">
                             </div>
 
                             <div class="six columns last">
-                                <h2> Contact Us</h2>
+                                
                                 <p class="contact-description">We want to serve you better than the best. Let us know about your shopping experience, shoot us a question, or fire over a comment, and we'll get back to you.</p>
 
                                 <form class="my-form">
@@ -80,7 +82,7 @@
                       </div>
 
                       <div class="contacts-other-info row">
-                          <h3> Other Ways to get in touch</h3>
+                          <h2> Other Ways to get in touch</h2>
                               <div class="info-detail twelve columns">
                                   <div class="icon two columns" id="email-icon">
                                     <img  class="icon-images" src="img/email.jpg" alt="an email icon image" >
@@ -122,16 +124,16 @@
                       <div id="map"></div>
                             <script>
                             function initMap() {
-                              var shiroStudio = {lat: 49.279660, lng: -122.918856};
+                              var IKGAI = {lat: 49.279660, lng: -122.918856};
                               var map = new google.maps.Map(document.getElementById('map'), {
                                 zoom: 15,
-                                center: shiroStudio
+                                center: IKGAI
                               });
 
                               var contentString = '<div id="content">'+
                                   '<div id="siteNotice">'+
                                   '</div>'+
-                                  '<h4 id="firstHeading" class="firstHeading">Shiro Studio</h4>'+
+                                  '<h4 id="firstHeading" class="firstHeading">IKIGAI</h4>'+
                                   '<div id="bodyContent">'+
                                   '<p><b>8888 university dr, burnaby, bc v5a 1s6</b>'+
                                   '</div>'+
@@ -142,7 +144,7 @@
                               });
 
                               var marker = new google.maps.Marker({
-                                position: shiroStudio,
+                                position: IKGAI,
                                 map: map,
                               });
                               marker.addListener('click', function() {
