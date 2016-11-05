@@ -163,8 +163,15 @@ pre{
   padding-top: 2rem;
 }
 
+/*===============================================================site map page styling====================*/
+.site-map-container{
+  padding:5%;
+}
 
-
+.site-map-img{
+  height:100%;
+  width:auto;
+}
 /*===========================================================website styling=======================*/
 
 /*-----------------------------------------------------------general styling-----------------------*/
@@ -1549,10 +1556,15 @@ figure p.row{
   padding-top: 1rem;
 }
 
+.contact-us-buttons{
+  margin-top: 2rem;
+}
 
-.contact .button{
-  width:100%;
-  margin-top: 1rem;
+@media only screen and (max-width: 53rem) {
+  .contact-us-buttons .button{
+   width:100%;
+   margin-bottom: 1rem;
+  }
 }
 
 .contact-img img{

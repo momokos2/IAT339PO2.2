@@ -79,7 +79,7 @@ $( ".bag-close" ).on("click", function(){
 });
 
 // pop up window for review sent confirmation
-var reviews = $('.reviews ');
+var pop = $('.pop-up-window');
 
 $( ".right" ).on( "click", function(){
   $( reviews ).toggleClass('pop-reviews-show');
@@ -91,7 +91,7 @@ $( ".overlay" ).on( "click",function(){
 });
 
 $( ".pop-reviews-close" ).on("click", function(){
-  $( reviews ).toggleClass('pop-reviewsshow');
+  $( reviews ).toggleClass('pop-reviews-show');
 });
 
 
