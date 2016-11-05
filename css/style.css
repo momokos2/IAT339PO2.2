@@ -1460,7 +1460,11 @@ margin-top: 1rem;
   padding-top: 0.5rem;
 }
 
-
+#map{
+      height:200px;
+      width:100%;
+      margin-top: 2rem;
+    }
 
 @media only screen and (max-width:95.25rem ){
   .two.icon{
