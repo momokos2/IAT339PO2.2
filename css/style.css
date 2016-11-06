@@ -388,7 +388,6 @@ footer{
   width: 50px;
   text-align: center;
   cursor: pointer;
-  @inlude transform(translateZ(0));
 }
 
 .newsletter button:hover {
@@ -548,7 +547,7 @@ a.in-text:hover {
   outline: none;
   border-color: #c9b9aa;
 }
-.my-form input:focus, .my-form textarea:hover, .my-form label, .checkbox .check-sign:hover, .my-form select:select
+.my-form input:focus, .my-form textarea:hover, .my-form label, .checkbox .check-sign:hover, .my-form select:hover
 {
   outline: none;
   border-color: #c9b9aa;
@@ -688,7 +687,6 @@ img{
 
 .product-item {
   margin-bottom: 10px;
-  margin-right: 
   text-align: center;
   border: 1px solid #F1F2F2;
   border-bottom: 2px solid #F1F2F2;
@@ -789,7 +787,6 @@ p.product-item-price{
   transition: all 300ms linear;
  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  transform: scale3d(0);
   background-color: black;
   opacity:0.8;
 }
@@ -987,12 +984,6 @@ p.overview-pg-price{
 
 .promotion-section {
   padding-top: 15px;
-
-  p {
-    color: lighten(black, 20%);
-    margin: 5px 0 15px;
-  } 
-
 }
 
 .promotion-code{
@@ -1037,9 +1028,9 @@ a.expand:hover{
 }
 
 .returning-customer, .new-customer{
-  height:22rem;
   text-align: center;
   padding-top: 1.5rem;
+  padding-bottom: 2.0rem;
 }
 
 .returning-customer{
@@ -1066,7 +1057,6 @@ a.expand:hover{
 
 .new-customer{
   background-color: #f0f0f0;
-  max-height: auto;
 }
 
 .new-customer .new-intro{
@@ -1083,6 +1073,13 @@ a.expand:hover{
 
 .new-customer .login-form{
   margin-top: 1rem;
+}
+
+@media only screen and (max-width: 48rem) {
+  .returning-customer.columns, .new-customer.columns{
+    width:100%;
+    margin-bottom: 0.5rem;
+  }
 }
 
 /*------------------------------------------------------------bag-checkout.html styling----------------*/
@@ -1346,8 +1343,8 @@ input.star {
 .write-review-buttons{
   margin-top: 2rem;
 }
-/*pop up window*/
 
+/*pop up window*/
 .reviews{
   visibility: hidden;
 }
@@ -1952,10 +1949,6 @@ h2.detail-page-description{
   padding-bottom: 1.5rem;
 }
 
-.product-section .button{
-  margin-top: :1.5rem;
-}
-
 .description-content{
   margin-bottom: 1rem;
 }
@@ -2199,7 +2192,7 @@ p.customer-name{
 
 /*____________________________________________________________________header__________________*/
 @media only screen and (max-width: 48rem) {
-  .header，.website.header{
+  .header, .website.header{
     top: 0;
     position: fixed;
     z-index: 5;
