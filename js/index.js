@@ -79,7 +79,7 @@ $( ".bag-close" ).on("click", function(){
 });
 
 // pop up window for review sent confirmation
-var pop = $('.pop-up-window');
+var reviews = $('.reviews ');
 
 $( ".right" ).on( "click", function(){
   $( reviews ).toggleClass('pop-reviews-show');
@@ -94,7 +94,21 @@ $( ".pop-reviews-close" ).on("click", function(){
   $( reviews ).toggleClass('pop-reviews-show');
 });
 
+// pop up window for contact sent confirmation
+var contacts = $('.contacts ');
 
+$( ".contact-submit" ).on( "click", function(){
+  $( contacts ).toggleClass('pop-contacts-show');
+
+});
+
+$( ".overlay" ).on( "click",function(){
+  $( contacts ).toggleClass('pop-contacts-show');
+});
+
+$( ".pop-contacts-close" ).on("click", function(){
+  $( contacts ).toggleClass('pop-contacts-show');
+});
 
 
 
