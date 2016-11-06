@@ -946,17 +946,25 @@ p.overview-pg-price{
   padding:1rem 1rem 2.5rem 1rem;
 }
 
-.summary-section ul{
-  list-style: none;
-  float:right;
+.summary-section-layout2{
+    display:none !important;
 }
 
 @media only screen and (max-width: 30rem) {
+  .summary-section-layout1{
+    display:none;
+  }
+  .summary-section-layout2{
+    display: block !important;
+  }
   .summary-section ul{
-  list-style: none;
-  float:left;
   padding-top: 1rem;
   }
+}
+
+.summary-section ul{
+  list-style: none;
+  float:right;
 }
 
 .summary-section ul li{
