@@ -57,9 +57,12 @@
   }
   
 .column, .columns{
-    margin: 1% 1% 1% 1%;
     overflow: hidden;
  }
+
+.columns.carter{
+ margin-left: 2%;
+}
  
 .one { width: 48% }
 .two { width: 48% }
@@ -84,7 +87,6 @@
   }
   
 .column, .columns{
-    margin: 1% 1% 1% 1%;
     overflow: hidden;
  }
  
