@@ -1397,6 +1397,11 @@ input.star {
 .reviews h3{
   text-align: center;
   margin-top: 6rem;
+  font-family: "Catamaran-Light",sans-serif;
+  font-weight: 700;
+  font-size:1rem;
+  text-transform: uppercase;
+  color:#333;
 }
 
 .reviews .button{
@@ -1487,7 +1492,7 @@ p.twelve {
   display: block;
 }
 
-.events figcaption{
+.events .four{
   position: absolute;
   padding-top: 0;
   z-index: 1;
@@ -1503,10 +1508,71 @@ p.twelve {
   margin-right: auto;
 }
 
-figure p.row{
+.inside-image-title h2{
+  color:#a78a7f;
+}
+
+p.row{
   text-align: center;
   margin-top: 1rem;
 }
+
+@media only screen and (max-width: 82.18rem) {
+  .inside-image-button{
+  margin-top: 2rem;
+  margin-left: 25%;
+  margin-right: 0;
+}
+  .inside-image-title h2{
+    font-size: 1.3rem;
+  }
+  p.row{
+  text-align: center;
+  margin-top: 0.9rem;
+}
+}
+
+@media only screen and (max-width: 68rem) {
+  .inside-image-button{
+  margin-top: 1rem;
+  margin-left: 20%;
+  margin-right: 0;
+}
+  .inside-image-title h2{
+    font-size: 1.3rem;
+  }
+  p.row{
+  text-align: center;
+  margin-top: 0.9rem;
+}}
+
+@media only screen and (max-width: 63.3rem) {
+  .events .four{
+    width: 100%;
+  padding-top: 0;
+  position:initial;
+  float: left;
+  top:20%;
+  left:55%;
+  margin-left: 0;
+  margin-top: 1rem;
+}
+.inside-image-button{
+  margin-top: 1rem;
+  margin-left: 35%;
+  margin-right: 0;
+}
+
+  }
+@media only screen and (max-width: 29rem) {
+.inside-image-button{
+  margin-top: 1rem;
+  margin-left: 25%;
+  margin-right: 0;
+}
+
+  }
+
 
 
 /*------------------------------------------------------------product-list.html-----------------------------*/
@@ -1892,9 +1958,9 @@ ul.frame-lense{
 }
 
 .product-section h3{
-  font-family: "PT_Sans-Web-Regular",sans-serif;
+  font-family: "Catamaran-Light",sans-serif;
   font-weight: 700;
-  font-size:0.9rem;
+  font-size:1rem;
   text-transform: uppercase;
   color:#333;
 }
