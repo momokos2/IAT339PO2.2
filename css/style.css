@@ -46,7 +46,7 @@ div {
 	padding-left: 25px;
 	font-size: 1em;
 	color: #bdbec0;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Catamaran-Regular", sans-serif;
 	text-decoration: none;
 }
 
@@ -55,7 +55,7 @@ div {
 }
 
 h1.style-sheet{
-  font-family: "Montserrat", sans-serif; 
+  font-family: "Catamaran-Regular", sans-serif; 
   text-transform: uppercase;
   color:#c9b9aa;
   font-size: 30px;
@@ -82,7 +82,7 @@ h1.style-sheet{
 }
 
 h2.style-sheet {
-	font-family: "Raleway", sans-serif; 
+	font-family: "Exo2-Regular", sans-serif; 
 	font-size: 24px;
 	font-weight:400;
 	text-transform: uppercase;
@@ -94,7 +94,7 @@ h2.style-sheet {
 }
 
 h3.style-sheet{
-	font-family: "Raleway", sans-serif; 
+	font-family: "Exo2-Regular", sans-serif; 
 	font-weight: 700;
 	font-size: 1em;
 	text-transform: none;
@@ -102,7 +102,7 @@ h3.style-sheet{
 }
 
 h4.style-sheet{
-	font-family: "Raleway", sans-serif; 
+	font-family: "Exo2-Regular", sans-serif; 
 	font-weight: 600;
 	font-size: 0.8em;
 	text-transform: none;
@@ -111,7 +111,7 @@ h4.style-sheet{
 }
 
 p.style-sheet{
-	font-family: "Raleway", sans-serif; 
+	font-family: "Exo2-Regular", sans-serif; 
 	font-weight:600;
 	margin-top:0;
 	margin-bottom: 1.5em;
@@ -1977,9 +1977,9 @@ ul.frame-lense{
 }
 
 .product-section h3{
-  font-family: "Catamaran-Light",sans-serif;
+  font-family: "PT_Sans-Web-Regular",sans-serif;
   font-weight: 700;
-  font-size:1rem;
+  font-size:0.8rem;
   text-transform: uppercase;
   color:#333;
 }
@@ -2124,7 +2124,7 @@ h2.ratings-reviews{
 }
 
 .comment-section ul li h4{
-  font-family: "Roboto-Medium",sans-serif;
+  font-family: "Caramaran-Medium",sans-serif;
   font-size: 1.2rem;
   padding-top:1.5rem;
   padding-bottom: 0.5rem;
