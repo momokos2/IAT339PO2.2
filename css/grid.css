@@ -58,10 +58,16 @@
   
 .column, .columns{
     overflow: hidden;
+    margin-top: 1%;
  }
 
 .columns.carter{
  margin-left: 2%;
+}
+
+.columns.home-banner{
+ margin-top: 0;
+ padding-top: 0;
 }
  
 .one { width: 48% }
@@ -89,6 +95,10 @@
 .column, .columns{
     overflow: hidden;
  }
+
+ .columns.carter{
+ margin-left: 0;
+}
  
 .one { width: 100% }
 .two { width: 100% }
