@@ -1587,6 +1587,7 @@ p.row{
   padding-bottom: 2rem;
   width:100%;
   overflow-y:auto;
+  position:relative;
 }
 
 .product-list-wrap .product-item{
@@ -1595,10 +1596,10 @@ p.row{
 
 .on-banner-text{
     position: absolute;
-    top: 35%;
+    top: 45%;
     text-align: left;
     width:22rem;
-    padding-left: 5rem;
+    padding-left: 3.5rem;
 }
 
 .on-banner-title{
@@ -1613,6 +1614,17 @@ p.row{
   font-family: "Catamaran-SemiBold",sans-serif;
   width:90%;
 }
+
+@media only screen and (max-width: 73rem) {
+  .on-banner-title{
+  color:#a78a7f;
+  font-family: "Lora-Regular",serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-bottom: 0.2rem;
+}
+}
+
 
 @media only screen and (max-width: 57rem) {
   .on-banner-text{
@@ -1812,7 +1824,7 @@ margin-top: 1rem;
   }
 }
 
-@media only screen and (max-width:48rem ){
+@media only screen and (max-width:37.5rem ){
   .two.icon{
     width:30%;
   }
@@ -1830,7 +1842,12 @@ margin-top: 1rem;
     margin-left: 0;
   }
   .three.icon{
-    width:30%;
+    width:100%;
+  }
+
+  .hours .nine {
+    width:100%;
+   
   }
 }
 
@@ -1860,6 +1877,7 @@ margin-top: 1rem;
 }
 
 /*___________________________________________________________________product-detail.html__________________*/
+
 .product-section{
   height:auto;
   display: inline-block;
