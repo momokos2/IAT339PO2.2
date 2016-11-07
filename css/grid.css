@@ -44,7 +44,7 @@
 .eleven { width: 91.5%}
 .twelve { width: 100%; margin: 0;}
 
-.last, .omega, .end{
+.last{
  margin: 0; 
 }
 
@@ -58,7 +58,7 @@
   
 .column, .columns{
     overflow: hidden;
-    margin-top: 1%;
+    margin-top: 1.5%;
  }
 
 .columns.carter{
@@ -69,11 +69,15 @@
  margin-top: 0;
  padding-top: 0;
 }
+
+.columns.second-last{
+ margin-right: 0;
+}
  
 .one { width: 48% }
 .two { width: 48% }
 .three { width: 48% }
-.four { width: 48% }
+.four { width: 49% }
 .five { width: 48% }
 .six { width: 48% }
 .seven { width: 48% }
