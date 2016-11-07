@@ -1347,6 +1347,7 @@ input.star {
 /*pop up window*/
 .reviews{
   visibility: hidden;
+  display:none;
 }
 
 .pop-reviews-content{
@@ -1685,6 +1686,7 @@ margin-top: 1rem;
 
 .contacts{
   visibility: hidden;
+  display:none;
 }
 
 .pop-contacts-content{
@@ -2014,6 +2016,7 @@ ul.lenses-description li{
 
 .bag{
   visibility: hidden;
+  display:none;
 }
 
 .bag-content{
