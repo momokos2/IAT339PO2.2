@@ -1355,7 +1355,7 @@ input.star {
 /*pop up window*/
 .reviews{
   visibility: hidden;
-  display:none;
+
 }
 
 .pop-reviews-content{
@@ -1683,7 +1683,6 @@ margin-top: 1rem;
 
 .contacts{
   visibility: hidden;
-  display:none;
 }
 
 .pop-contacts-content{
@@ -2013,7 +2012,7 @@ ul.lenses-description li{
 
 .bag{
   visibility: hidden;
-  display:none;
+
 }
 
 .bag-content{
@@ -2032,7 +2031,7 @@ ul.lenses-description li{
   padding: 0;
   line-height: 32rem;
   text-align: center;
-  display: block;
+  
 }
 
 .bag-close{
@@ -2040,6 +2039,7 @@ ul.lenses-description li{
   right:2rem;
   top:1rem;
   text-decoration: none;
+  display: none;
   
 }
 
