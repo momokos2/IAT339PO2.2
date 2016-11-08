@@ -201,6 +201,14 @@ pre{
   transform:translate(0,-1.5rem);
 }
 
+.line-separator-3{
+  height: 1px; 
+  background: #717171;
+  border-bottom: 1px solid gainsboro;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
 .hcenter{
   margin-left: auto;
   margin-right: auto;
@@ -1489,96 +1497,85 @@ p.twelve {
 
 /*------------------------------------------------------------event.html styling----------------*/
 .events{
-  padding-top: 1rem;
   position: relative;
+}
+
+h1.event-page{
+  margin-bottom: 2rem;
+}
+
+.event-banner{
+  text-align: center;
   margin-bottom: 1rem;
+}
+
+.event-content{
+  padding-top: 1rem;
+}
+
+.events-detail{
+  margin-top: 1rem;
+}
+
+.in-image-component{
+   position: absolute;
+   top: 30%;
+   margin-left: 60%;
+   width:20rem;
+}
+
+.out-image-component
+{
+    text-align: center;
+    display:none;
+}
+
+.inside-image-button{
+  margin-top: 1rem;
+}
+
+p.inside-image-content{
+  font-weight: 700;
 }
 
 .events img{
   display: block;
 }
 
-.events .four{
-  position: absolute;
-  padding-top: 0;
-  z-index: 1;
-  float: right;
-  top:20%;
-  left:55%;
-  margin-left: 2%;
-}
-
-.inside-image-button{
-  margin-top: 2rem;
-  margin-left: 30%;
-  margin-right: auto;
-}
 
 .inside-image-title h2{
   color:#a78a7f;
 }
 
-p.row{
-  text-align: center;
-  margin-top: 1rem;
-}
+@media only screen and (max-width: 70rem){
+  .in-image-component{
 
-@media only screen and (max-width: 82.18rem) {
-  .inside-image-button{
-  margin-top: 2rem;
-  margin-left: 25%;
-  margin-right: 0;
-}
-  .inside-image-title h2{
-    font-size: 1.3rem;
-  }
-  p.row{
-  text-align: center;
-  margin-top: 0.9rem;
-}
-}
-
-@media only screen and (max-width: 68rem) {
-  .inside-image-button{
-  margin-top: 1rem;
-  margin-left: 20%;
-  margin-right: 0;
-}
-  .inside-image-title h2{
-    font-size: 1.3rem;
-  }
-  p.row{
-  text-align: center;
-  margin-top: 0.9rem;
-}}
-
-@media only screen and (max-width: 63.3rem) {
-  .events .four{
-    width: 100%;
-  padding-top: 0;
-  position:initial;
-  float: left;
-  top:20%;
-  left:55%;
-  margin-left: 0;
-  margin-top: 1rem;
-}
-.inside-image-button{
-  margin-top: 1rem;
-  margin-left: 35%;
-  margin-right: 0;
-}
+   margin-left: 55%;
 
   }
-@media only screen and (max-width: 29rem) {
-.inside-image-button{
-  margin-top: 1rem;
-  margin-left: 25%;
-  margin-right: 0;
 }
 
+@media only screen and (max-width: 65rem){
+  .in-image-component{
+   margin-left: 50%;
+  }
+}
+
+@media only screen and (max-width: 60rem){
+  .in-image-component.in-image-layout1{
+   display:none !important;
   }
 
+    .out-image-component
+  {
+      display:block;
+  }
+
+}
+
+.event-banner img{
+  margin-bottom: 1rem;
+}
 
 
 /*------------------------------------------------------------product-list.html-----------------------------*/
