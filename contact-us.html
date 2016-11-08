@@ -54,7 +54,7 @@
 
                                 <form class="my-form">
                                     <div class="text-input">
-                                        <label>Name*</label><i class="bar"></i>
+                                        <label id="Name">Name*</label><i class="bar"></i>
                                         <input id="address" type="text" required="required"/>
                                     </div>
 
@@ -69,7 +69,7 @@
                                     </div>
 
                                     <div class="text-input">
-                                        <label>Comment</label>
+                                        <label for="textarea">Comment</label>
                                         <textarea class="contact-textarea" id="textarea" required="required" placeholder="Enter comment here..."></textarea>
                                     </div>
                                     <div class="contact-us-buttons">
@@ -107,39 +107,39 @@
                       <div class="contacts-other-info row">
                           <h2> Other Ways to get in touch</h2>
                               <div class="info-detail twelve columns">
-                                  <div class="icon two columns" id="email-icon">
+                                  <div class="icon three columns" id="email-icon">
                                     <img  class="icon-images" src="img/email.png" alt="an email icon image" >
                                     <div class="icon-title-info"> <p>service@ikigai.com</p></div>
                                   </div>
 
-                                  <div class="icon two columns" id="phone-icon">
+                                  <div class="icon three columns" id="phone-icon">
                                     <img  class="icon-images" src="img/phone.png" alt="a phone icon image">
                                     <div class="icon-title-info"> <p>1-888-888-8888</p></div>
                                   </div>
 
-                                  <div class="icon two columns" id="chat-icon">
+                                  <div class="icon three columns" id="chat-icon">
                                     <img  class="icon-images" src="img/chat.png" alt="a chat icon image">
                                     <div class="icon-title-info"> <p><a href="#" class="in-text">Chat Now</a></p></div>
                                   </div>
 
-                                  <div class="hours info-detail six columns">
-                                      <div class="icon three columns">
-                                        <h4> HOURS OF SERVICE</h4>
-                                      </div>
+                                  <div class="icon three columns last" id="chat-icon">
+                                    <img  class="icon-images" src="img/location.png" alt="a chat icon image">
+                                    <div class="icon-title-info"> <p>8888 university dr, burnaby</p></div>
+                                  </div>
 
-                                      <div class="nine columns">
-                                          <div class="icon twelve columns">
-                                            <p> Weekday: 5:00AM - 10:00PM PST</p>
-                                            <p> Saturday: 6:00AM - 10:00PM PST</p>
-                                            <p> Sunday: 7:00AM - 10:00PM PST</p>
-                                          </div>                             
-                                    </div>
-                                  </div>                        
+
+                                                         
                               </div>                       
                       </div>
 
                       <!--Map -->
-                      <div id="map"></div>
+                      
+                      
+                </div> <!-- end content-wrapper -->
+
+                
+
+                <div id="map"></div>
                             <script>
                             function initMap() {
                               var IKIGAI = {lat: 49.279660, lng: -122.918856};
@@ -171,10 +171,6 @@
                             }
                             </script>
                             <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
-                      
-                </div> <!-- end content-wrapper -->
-
-                <div class="push"></div>
 
                 <footer>
                       <div class="row footer-div">

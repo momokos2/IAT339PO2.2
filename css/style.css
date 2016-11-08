@@ -1644,7 +1644,7 @@ p.row{
   margin-top: 2rem;
 }
 
-@media only screen and (max-width: 53rem) {
+@media only screen and (max-width: 55rem) {
   .contact-us-buttons .button{
    width:100%;
    margin-bottom: 1rem;
