@@ -306,7 +306,7 @@ pre{
 
 /*____________________________________________________________footer______________*/
 footer{
-  background: rgb(200,200,200);
+  background: rgba(93,68,63,.3);
   margin:0px;
   padding:2rem 0;
   min-width:100%;
@@ -336,7 +336,7 @@ footer{
 }
 
 .footer-div .footer-component ul a:hover{
-  color:#a78a7f;
+  color:white;
 }
 
 .footer-div .footer-component .footer-title{
@@ -1522,7 +1522,7 @@ h1.event-page{
 
 .in-image-component{
    position: absolute;
-   top: 30%;
+   top: 23%;
    margin-left: 60%;
    width:20rem;
 }
