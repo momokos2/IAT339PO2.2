@@ -51,11 +51,11 @@ $(document).ready(function(){
 
     $('#header-icon').click(function(e){
       e.preventDefault();
-      $('body').toggleClass('with--sidebar');
+      $('body').toggleClass('sidebar');
     });
     
     $('#site-cache').click(function(e){
-      $('body').removeClass('with--sidebar');
+      $('body').removeClass('sidebar');
     });
 
   })(jQuery);

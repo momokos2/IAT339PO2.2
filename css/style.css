@@ -2179,11 +2179,11 @@ p.customer-name{
     transform: translateX(0px);
   }
 
-  .with--sidebar .site-pusher {
+  .sidebar .site-pusher {
     -webkit-transform: translateX(250px);
     transform: translateX(250px);
   }
-  .with--sidebar .site-cache {
+  .sidebar .site-cache {
     position: absolute;
     top: 0;
     left: 0;
